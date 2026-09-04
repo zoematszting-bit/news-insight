@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>視野 · AI 產業×香港政策×民生 分析庫</title>
+<style>
+:root{
+  --ink:#3f3a32; --bg:#f7f4ec; --card:#fffdf7; --line:#e5ddca;
+  --gold:#b08d57; --blue:#7e94ab; --teal:#6f8a7a;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{font-family:-apple-system,"PingFang HK","Noto Sans TC",sans-serif;background:var(--bg);color:var(--ink);line-height:1.75;font-size:16px}
+.wrap{max-width:720px;margin:0 auto;padding:0 16px 70px}
+header{padding:26px 0 16px;border-bottom:2px solid var(--ink)}
+header h1{font-size:21px;letter-spacing:.05em}
+header .sub{font-size:12.5px;color:#8a8272;margin-top:4px}
+nav{position:sticky;top:0;background:var(--bg);z-index:10;display:flex;gap:6px;overflow-x:auto;padding:12px 0 8px;border-bottom:1px solid var(--line);scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav button{flex:0 0 auto;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:18px;padding:6px 13px;font-size:13.5px;cursor:pointer;white-space:nowrap}
+nav button.on{background:var(--ink);color:#f7f4ec;border-color:var(--ink)}
+.tagbar{display:flex;gap:6px;flex-wrap:wrap;padding:12px 0 4px}
+.tagbar button{border:1px dashed var(--gold);background:transparent;color:var(--gold);border-radius:14px;padding:3px 11px;font-size:12.5px;cursor:pointer}
+.tagbar button.on{background:var(--gold);color:#fff;border-style:solid}
+.dategroup{margin-top:20px}
+.dategroup h3{font-size:13px;color:#8a8272;letter-spacing:.08em;border-left:3px solid var(--gold);padding-left:9px;margin-bottom:10px}
+article.card{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:6px;padding:14px 15px 12px;margin-bottom:12px;cursor:pointer;position:relative}
+article.card.policy{border-left-color:var(--blue)}
+article.card.social{border-left-color:var(--teal)}
+article.card h2{font-size:16.5px;line-height:1.5;margin-bottom:6px;padding-right:30px}
+article.card .meta{font-size:12px;color:#8a8272;margin-bottom:6px}
+article.card .meta .b{font-weight:600}
+article.card.ai .meta .b{color:var(--gold)} article.card.policy .meta .b{color:var(--blue)} article.card.social .meta .b{color:var(--teal)}
+article.card .short{font-size:14px;color:#5c564a}
+article.card .tags{margin-top:8px;display:flex;gap:5px;flex-wrap:wrap}
+article.card .tags span{font-size:11px;color:var(--blue);border:1px dashed var(--blue);border-radius:10px;padding:1px 8px}
+.star{position:absolute;top:12px;right:12px;font-size:19px;border:none;background:none;cursor:pointer;color:#d8cfb8}
+.star.on{color:var(--gold)}
+.empty{text-align:center;color:#8a8272;padding:44px 0;font-size:14px}
+.view{display:none;padding-top:14px}
+.view.on{display:block}
+#detail .back,#v-timeline .back{border:none;background:none;color:var(--gold);font-size:14px;cursor:pointer;padding:4px 0;margin-bottom:6px}
+#detail h1{font-size:20px;line-height:1.55;margin-bottom:8px}
+#detail .meta{font-size:12.5px;color:#8a8272;border-bottom:1px dashed var(--line);padding-bottom:10px;margin-bottom:12px}
+#detail h4{font-size:14.5px;color:var(--gold);margin:20px 0 8px;letter-spacing:.03em}
+#detail .src{font-size:12.5px;color:#8a8272;margin-bottom:4px}
+#detail .src a{color:var(--blue);word-break:break-all}
+#detail .core{background:#f3edde;border-left:3px solid var(--gold);padding:11px 13px;border-radius:4px;font-size:14.5px}
+#detail .dim{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:11px 13px;margin-bottom:9px}
+#detail .dim b{display:block;font-size:14px;margin-bottom:4px}
+#detail .dim p{font-size:14px;white-space:pre-line}
+#detail ol.actions{padding-left:22px;font-size:14.5px}
+#detail ol.actions li{margin-bottom:6px}
+#detail .verified{font-size:12px;color:var(--teal);margin-top:6px}
+textarea.note,input.txt,select.sel{width:100%;border:1px dashed var(--line);border-radius:6px;background:var(--card);padding:10px;font-size:14px;font-family:inherit;color:var(--ink)}
+textarea.note{min-height:90px;resize:vertical}
+.notehint{font-size:12px;color:#8a8272;margin-top:5px}
+.btnrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.btn{border:1px solid var(--ink);background:var(--ink);color:#f7f4ec;border-radius:18px;padding:7px 16px;font-size:13.5px;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink)}
+.related{margin-top:10px}
+.related a{display:block;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:9px 12px;font-size:13.5px;margin-bottom:7px;color:var(--ink);text-decoration:none}
+.related a .r{font-size:11.5px;color:var(--gold)}
+/* 時間軸 */
+.tl{border-left:2px solid var(--line);margin:14px 0 0 10px;padding-left:18px}
+.tl .ev{position:relative;margin-bottom:20px;cursor:pointer}
+.tl .ev::before{content:'';position:absolute;left:-24px;top:7px;width:9px;height:9px;border-radius:50%;background:var(--gold);border:2px solid var(--bg)}
+.tl .ev.policy::before{background:var(--blue)} .tl .ev.social::before{background:var(--teal)}
+.tl .ev .d{font-size:11.5px;color:#8a8272;letter-spacing:.06em}
+.tl .ev .t{font-size:14.5px;line-height:1.5}
+/* 待辦/知識夾/預測/週報/搜尋 */
+.todoitem{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:10px 13px;margin-bottom:9px;font-size:14.5px}
+.todoitem .from{font-size:12px;color:#8a8272;margin-top:4px}
+.folder{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:11px 13px;margin-bottom:11px}
+.folder h3{font-size:15px;margin-bottom:6px}
+.folder a{display:block;font-size:13.5px;color:var(--ink);text-decoration:none;padding:5px 0;border-bottom:1px dashed var(--line)}
+.qinput{display:flex;gap:8px;margin:10px 0}
+.qinput input{flex:1;border:1px solid var(--line);border-radius:18px;padding:8px 14px;font-size:14px;font-family:inherit;background:var(--card)}
+.qinput button{border:none;background:var(--ink);color:#f7f4ec;border-radius:18px;padding:8px 16px;font-size:13.5px;cursor:pointer}
+.qresult{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:11px 13px;margin-bottom:10px;cursor:pointer}
+.qresult b{font-size:14.5px}
+.qresult .snip{font-size:13px;color:#5c564a;margin-top:4px}
+.qresult mark,.tl mark{background:#f0e2c8;color:inherit}
+.pred{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:11px 13px;margin-bottom:10px;font-size:14.5px}
+.pred .pm{font-size:12px;color:#8a8272;margin:4px 0}
+.pred .st{display:inline-block;font-size:12px;border-radius:10px;padding:2px 10px;border:1px dashed var(--gold);color:var(--gold);cursor:pointer}
+.pred .st.ok{border-color:#6f8a6a;color:#6f8a6a;border-style:solid}
+.pred .st.bad{border-color:var(--clay,#b37660);color:#b37660;border-style:solid}
+.report{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:14px 15px;margin-bottom:13px}
+.report h3{font-size:16px;margin-bottom:8px}
+.report .rw{font-size:14px;white-space:pre-line}
+.hint{font-size:12.5px;color:#8a8272;margin:6px 0 10px}
+@media print{nav,.tagbar,#detail .back,.btnrow,textarea.note,.notehint,.related,.star{display:none!important}body{background:#fff}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>視野 · 分析庫</h1>
+  <div class="sub">🤖 AI 產業 × 🏛️ 政府政策 × 🌆 民生社會｜每則必附個人化解讀｜每日 07:00 自動更新</div>
+</header>
+
+<nav id="nav">
+  <button data-v="list" class="on">全部</button>
+  <button data-v="ai">🤖 AI</button>
+  <button data-v="policy">🏛️ 政策</button>
+  <button data-v="social">🌆 民生</button>
+  <button data-v="shelf">🗂️ 知識夾</button>
+  <button data-v="timeline">🕐 時間軸</button>
+  <button data-v="kb">❓ 知識庫</button>
+  <button data-v="todo">✅ 待辦</button>
+  <button data-v="reports">📰 週報</button>
+  <button data-v="predict">🔮 預測</button>
+  <button data-v="kw">🔑 關鍵字</button>
+</nav>
+
+<!-- 列表 -->
+<div id="v-list" class="view on">
+  <div id="tagbar" class="tagbar"></div>
+  <div id="list"></div>
+</div>
+
+<!-- 知識夾 -->
+<div id="v-shelf" class="view">
+  <h1 style="font-size:19px;margin:14px 0 6px">🗂️ 我嘅知識夾</h1>
+  <div class="hint">書籤收藏＋自訂分類（存本機）。喺文章右上加 ☆ 收藏。</div>
+  <div style="display:flex;gap:8px;margin:8px 0 14px">
+    <input class="txt" id="newfolder" placeholder="新增知識夾名稱（例：Agent產品靈感）" style="flex:1">
+    <button class="btn" onclick="addFolder()">新增</button>
+  </div>
+  <div id="folders"></div>
+</div>
+
+<!-- 時間軸 -->
+<div id="v-timeline" class="view">
+  <h1 style="font-size:19px;margin:14px 0 4px">🕐 時間軸</h1>
+  <div class="tagbar" id="tlbar"></div>
+  <div class="tl" id="tl"></div>
+</div>
+
+<!-- 知識庫問答 -->
+<div id="v-kb" class="view">
+  <h1 style="font-size:19px;margin:14px 0 4px">❓ 站內知識庫檢索</h1>
+  <div class="hint">跨全文檢索所有文章，自動排列最相關結果（RAG 版本待 LLM 成本評估後升級）</div>
+  <div class="qinput"><input id="q" placeholder="例：Agent 安全設計／施政報告 福利"><button onclick="doSearch()">搜尋</button></div>
+  <div id="qout"></div>
+</div>
+
+<!-- 待辦 -->
+<div id="v-todo" class="view"><h1 style="font-size:19px;margin:14px 0 12px">✅ 統一行動待辦</h1><div id="todolist"></div></div>
+
+<!-- 週報 -->
+<div id="v-reports" class="view"><h1 style="font-size:19px;margin:14px 0 12px">📰 每週一頁式週報</h1><div id="reportlist"></div></div>
+
+<!-- 預測 -->
+<div id="v-predict" class="view">
+  <h1 style="font-size:19px;margin:14px 0 4px">🔮 個人預測追蹤</h1>
+  <div class="hint">記錄你對趨勢/政策嘅判斷，之後對照真實發展驗證（撳狀態掣切換：待驗證→應驗→落空）</div>
+  <textarea class="note" id="ptext" placeholder="你嘅預測（例：OpenAI 年內推出 XX）" style="min-height:60px"></textarea>
+  <div class="btnrow"><button class="btn" onclick="addPred()">記低預測</button></div>
+  <div id="predlist" style="margin-top:14px"></div>
+</div>
+
+<!-- 關鍵字 -->
+<div id="v-kw" class="view">
+  <h1 style="font-size:19px;margin:14px 0 4px">🔑 關鍵字監察</h1>
+  <div class="hint">每行一個關鍵字。改完之後話 ZCode 知一聲，自動搜集會加入監察；標題命中會喺列表高亮。</div>
+  <textarea class="note" id="kwbox" style="min-height:120px" oninput="saveKw()"></textarea>
+  <div class="notehint">存本機；建議同步話 ZCode 加入每日 07:00 自動任務</div>
+</div>
+
+<!-- 詳情 -->
+<div id="v-detail" class="view">
+  <button class="back" onclick="show('list')">← 返回列表</button>
+  <div id="dcontent"></div>
+</div>
+</div>
+
+<script src="data/articles.js"></script>
+<script src="data/reports.js"></script>
+<script>
+var TAGS=['產品靈感','作品集價值','創業機會','商業參考','公務員考試','執行難點'];
+var BOARD={ai:{n:'🤖 AI 產業',c:'gold'},policy:{n:'🏛️ 政府政策',c:'blue'},social:{n:'🌆 民生社會',c:'teal'}};
+var filter='all', tag='', tlf='all';
+function LS(k,v){if(v!==undefined){localStorage.setItem(k,JSON.stringify(v));return v}try{return JSON.parse(localStorage.getItem(k))}catch(e){return null}}
+function getMarks(){return LS('marks',[])}
+function isMarked(id){return getMarks().indexOf(id)>=0}
+function kwList(){return (localStorage.getItem('kw_manual')||'').split('\n').map(function(s){return s.trim()}).filter(Boolean)}
+function hl(t){var ks=kwList();ks.forEach(function(k){if(k.length>1)t=t.split(k).join('<mark>'+k+'</mark>')});return t}
+
+function fmtDate(d){var w=['日','一','二','三','四','五','六'];var dt=new Date(d+'T00:00:00');return d+'（'+w[dt.getDay()]+'）'}
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+
+function show(v){
+  document.querySelectorAll('.view').forEach(function(x){x.classList.toggle('on',x.id==='v-'+v)});
+  document.querySelectorAll('nav button').forEach(function(b){b.classList.toggle('on',b.dataset.v===v)});
+  if(v==='shelf')renderFolders();if(v==='todo')renderTodo();if(v==='reports')renderReports();if(v==='predict')renderPreds();if(v==='timeline')renderTL();if(v==='kw'){document.getElementById('kwbox').value=localStorage.getItem('kw_manual')||''};
+  window.scrollTo(0,0);
+}
+function setTag(t){tag=(tag===t)?'':t;renderTags();renderList()}
+function renderTags(){var h='<button class="'+(tag===''?'on':'')+'" onclick="setTag(\'\')">全部標籤</button>';TAGS.forEach(function(t){h+='<button class="'+(tag===t?'on':'')+'" onclick="setTag(\''+t+'\')">'+t+'</button>'});document.getElementById('tagbar').innerHTML=h}
+
+function renderList(){
+  var arr=ARTICLES.filter(function(a){return (filter==='all'||a.board===filter)&&(tag===''||a.tags.indexOf(tag)>=0)}).slice().sort(function(a,b){return b.date<a.date?-1:1}).sort(function(a,b){return a.date<b.date?1:-1});
+  arr=ARTICLES.filter(function(a){return (filter==='all'||a.board===filter)&&(tag===''||a.tags.indexOf(tag)>=0)});
+  arr.sort(function(a,b){return b.date.localeCompare(a.date)});
+  if(!arr.length){document.getElementById('list').innerHTML='<div class="empty">暫時冇內容</div>';return}
+  var byDate={};arr.forEach(function(a){(byDate[a.date]=byDate[a.date]||[]).push(a)});
+  var h='';
+  Object.keys(byDate).sort().reverse().forEach(function(d){
+    h+='<div class="dategroup"><h3>📅 '+fmtDate(d)+'</h3>';
+    byDate[d].forEach(function(a){
+      h+='<article class="card '+a.board+'" onclick="openArticle(\''+a.id+'\')">'
+        +'<button class="star '+(isMarked(a.id)?'on':'')+'" onclick="event.stopPropagation();toggleMark(\''+a.id+'\',this)">☆</button>'
+        +'<h2>'+hl(esc(a.title))+'</h2>'
+        +'<div class="meta"><span class="b">'+BOARD[a.board].n+'</span>｜'+a.date+'｜✓已查證 '+a.verifiedDate+'</div>'
+        +'<div class="short">'+esc(a.summaryShort)+'</div>'
+        +'<div class="tags">'+a.tags.map(function(t){return '<span>'+t+'</span>'}).join('')+'</div></article>';
+    });h+='</div>';
+  });
+  document.getElementById('list').innerHTML=h;
+}
+function toggleMark(id,btn){var m=getMarks();var i=m.indexOf(id);if(i>=0)m.splice(i,1);else m.push(id);LS('marks',m);if(btn)btn.classList.toggle('on',i<0)}
+
+function related(a){
+  return ARTICLES.filter(function(x){return x.id!==a.id&&x.board===a.board&&x.tags.filter(function(t){return a.tags.indexOf(t)>=0}).length>0})
+    .concat(ARTICLES.filter(function(x){return x.id!==a.id&&x.board!==a.board&&x.tags.filter(function(t){return a.tags.indexOf(t)>=0}).length>0})).slice(0,3);
+}
+function openArticle(id){
+  var a=ARTICLES.find(function(x){return x.id===id});if(!a)return;
+  var src=a.sources.map(function(s){return '<div class="src">📄 <a href="'+s.url+'" target="_blank" rel="noopener">'+esc(s.org)+'｜'+esc(s.title)+'（'+s.date+'）</a></div>'}).join('');
+  var dims=(a.dims||[]).map(function(d){return '<div class="dim"><b>'+esc(d.title)+'</b><p>'+esc(d.body)+'</p></div>'}).join('');
+  var acts=(a.actions||[]).map(function(t){return '<li>'+esc(t)+'</li>'}).join('');
+  var rel=related(a).map(function(r){return '<a href="#" onclick="event.preventDefault();openArticle(\''+r.id+'\')"><span class="r">'+BOARD[r.board].n+' · '+r.date+'</span><br>'+esc(r.title)+'</a>'}).join('');
+  document.getElementById('dcontent').innerHTML=
+    '<h1>'+esc(a.title)+'</h1>'
+    +'<div class="meta">'+BOARD[a.board].n+'｜'+a.date+'｜標籤：'+a.tags.join('、')+'</div>'
+    +'<h4>📰 新聞重點摘要</h4><p style="font-size:14.5px">'+esc(a.summary)+'</p>'
+    +'<div class="verified">✅ 已交叉查證（查證日期 '+a.verifiedDate+'，≥2 獨立來源）</div>'
+    +'<h4>🔍 專屬影響解讀 · 核心必答</h4><div class="core">'+esc(a.coreAnalysis)+'</div>'
+    +(dims?'<h4>📐 選答維度</h4>'+dims:'')
+    +'<h4>🎯 實用啟示與行動建議</h4><ol class="actions">'+acts+'</ol>'
+    +'<h4>🔗 規範引用來源</h4>'+src
+    +'<h4>✍️ 個人備註區（只存你部機）</h4>'
+    +'<textarea class="note" id="notebox" placeholder="諗法、產品靈感、學習待辦……" oninput="localStorage.setItem(\'note_'+a.id+'\',this.value)"></textarea>'
+    +'<div class="btnrow">'
+    +'<button class="btn '+(isMarked(a.id)?'':'ghost')+'" onclick="toggleMark(\''+a.id+'\');location.reload()">☆ 收藏</button>'
+    +'<button class="btn ghost" onclick="exportMD(\''+a.id+'\')">⬇️ 匯出 Markdown</button>'
+    +'<button class="btn ghost" onclick="window.print()">🖨️ 匯出 PDF</button>'
+    +'<button class="btn ghost" onclick="shareCard(\''+a.id+'\')">🖼️ 生成分享卡</button></div>'
+    +(rel?'<h4>🧩 關聯新聞推薦</h4><div class="related">'+rel+'</div>':'');
+  document.getElementById('notebox').value=localStorage.getItem('note_'+a.id)||'';
+  show('detail');
+}
+function exportMD(id){
+  var a=ARTICLES.find(function(x){return x.id===id});
+  var md='# '+a.title+'\n\n'+BOARD[a.board].n+'｜'+a.date+'｜標籤：'+a.tags.join('、')+'\n\n## 摘要\n'+a.summary+'\n\n## 核心解讀\n'+a.coreAnalysis+'\n';
+  (a.dims||[]).forEach(function(d){md+='\n## '+d.title+'\n'+d.body+'\n'});
+  md+='\n## 行動建議\n';(a.actions||[]).forEach(function(t,i){md+=(i+1)+'. '+t+'\n'});
+  md+='\n## 來源\n';a.sources.forEach(function(s){md+='- '+s.org+'｜'+s.title+'（'+s.date+'） '+s.url+'\n'});
+  var b=new Blob([md],{type:'text/markdown'});var l=document.createElement('a');l.href=URL.createObjectURL(b);l.download=a.id+'.md';l.click();
+}
+function shareCard(id){
+  var a=ARTICLES.find(function(x){return x.id===id});
+  var c=document.createElement('canvas');c.width=1200;c.height=630;
+  var x=c.getContext('2d');
+  x.fillStyle='#f7f4ec';x.fillRect(0,0,1200,630);
+  x.fillStyle='#b08d57';x.fillRect(0,0,10,630);
+  x.fillStyle='#8a8272';x.font='500 30px "PingFang HK",-apple-system,sans-serif';
+  x.fillText(BOARD[a.board].n+' ｜ '+a.date+' ｜ ✓已交叉查證',70,110);
+  x.fillStyle='#3f3a32';x.font='700 56px "PingFang HK",-apple-system,sans-serif';
+  var line='',ln=0,y=210;
+  for(var i=0;i<a.title.length;i++){
+    if(x.measureText(line+a.title[i]).width>1000){x.fillText(line,70,y);y+=78;ln++;line='';if(ln>=3)break}
+    line+=a.title[i];
+  }
+  if(ln<3)x.fillText(line,70,y);
+  x.fillStyle='#7e94ab';x.font='400 30px "PingFang HK",-apple-system,sans-serif';
+  x.fillText(a.tags.join(' · '),70,530);
+  x.fillStyle='#b08d57';x.font='600 32px "PingFang HK",-apple-system,sans-serif';
+  x.fillText('視野 · 分析庫',70,590);
+  var l=document.createElement('a');l.href=c.toDataURL('image/png');l.download=a.id+'_card.png';l.click();
+}
+function renderTodo(){
+  var h='';ARTICLES.forEach(function(a){(a.actions||[]).forEach(function(ac){h+='<div class="todoitem">✅ '+esc(ac)+'<div class="from">📅 '+a.date+'｜'+esc(a.title)+'</div></div>'})});
+  document.getElementById('todolist').innerHTML=h||'<div class="empty">暫時冇待辦</div>';
+}
+function renderTL(){
+  var h='';['all','ai','policy','social'].forEach(function(f){h+='<button class="'+(tlf===f?'on':'')+'" onclick="tlf=\''+f+'\';renderTL()" style="border:1px dashed var(--gold);background:transparent;color:var(--gold);border-radius:14px;padding:3px 11px;font-size:12.5px'+(tlf===f?';background:var(--gold);color:#fff':'')+'">'+(f==='all'?'全部':BOARD[f].n)+'</button>'});
+  document.getElementById('tlbar').innerHTML=h;
+  var arr=ARTICLES.filter(function(a){return tlf==='all'||a.board===tlf}).sort(function(a,b){return a.date.localeCompare(b.date)});
+  var e='';arr.forEach(function(a){e+='<div class="ev '+a.board+'" onclick="openArticle(\''+a.id+'\')"><div class="d">'+fmtDate(a.date)+'</div><div class="t">'+hl(esc(a.title))+'</div></div>'});
+  document.getElementById('tl').innerHTML=e||'<div class="empty">暫時冇內容</div>';
+}
+function doSearch(){
+  var q=document.getElementById('q').value.trim();
+  if(!q){document.getElementById('qout').innerHTML='';return}
+  var terms=q.split(/[\s,，、]+/).filter(Boolean);
+  var scored=ARTICLES.map(function(a){
+    var txt=[a.title,a.summary,a.summaryShort,a.coreAnalysis].concat((a.dims||[]).map(function(d){return d.title+' '+d.body})).concat(a.actions||[]).join(' ');
+    var s=0;terms.forEach(function(t){s+=(a.title.split(t).length-1)*5+(txt.split(t).length-1)});
+    return {a:a,s:s};
+  }).filter(function(x){return x.s>0}).sort(function(x,y){return y.s-x.s}).slice(0,5);
+  var h=scored.length?'':'<div class="empty">搵唔到相關內容</div>';
+  scored.forEach(function(x){
+    var snip=x.a.summaryShort;terms.forEach(function(t){var i=snip.indexOf(t);if(i<0)i=0;snip=snip.substring(Math.max(0,i-15),i+60)});
+    h+='<div class="qresult" onclick="openArticle(\''+x.a.id+'\')"><b>'+hl(esc(x.a.title))+'</b><div class="snip">…'+esc(snip)+'…</div><div class="pm" style="font-size:11.5px;color:#8a8272">'+BOARD[x.a.board].n+'｜'+x.a.date+'｜相關度 '+x.s+'</div></div>';
+  });
+  document.getElementById('qout').innerHTML=h;
+}
+function getFolders(){return LS('folders',['Agent產品靈感','創業參考','公職面試素材'])}
+function addFolder(){var v=document.getElementById('newfolder').value.trim();if(!v)return;var f=getFolders();if(f.indexOf(v)<0)f.push(v);LS('folders',f);document.getElementById('newfolder').value='';renderFolders()}
+function getShelf(){return LS('shelf',{})}
+function renderFolders(){
+  var marks=getMarks(),shelf=getShelf(),fs=getFolders(),h='';
+  fs.forEach(function(f){
+    h+='<div class="folder"><h3>📁 '+esc(f)+'</h3>';
+    var any=false;
+    marks.forEach(function(id){var a=ARTICLES.find(function(x){return x.id===id});if(a&&(shelf[id]||'未分類')===f){h+='<a href="#" onclick="event.preventDefault();openArticle(\''+id+'\')">'+esc(a.title)+'</a>';any=true}});
+    if(!any)h+='<div class="hint" style="margin:0">（空）</div>';
+    h+='</div>';
+  });
+  var unc=marks.filter(function(id){return !Object.keys(shelf).includes(id)}).length+marks.filter(function(id){return getFolders().indexOf(shelf[id])>=0===false&&shelf[id]}).length;
+  h+='<div class="folder"><h3>📥 未分類</h3>';
+  var any2=false;marks.forEach(function(id){var a=ARTICLES.find(function(x){return x.id===id});if(a&&(!shelf[id]||getFolders().indexOf(shelf[id])<0)){h+='<div style="font-size:13.5px;padding:5px 0;border-bottom:1px dashed var(--line)">'+esc(a.title)+' <select class="sel" style="width:auto;padding:2px 6px;font-size:12px;display:inline-block" onchange="getShelf()[\''+id+'\']=this.value;LS(\'shelf\',getShelf())"><option value="">分去…</option>'+fs.map(function(f){return '<option>'+f+'</option>'}).join('')+'</select></div>';any2=true}});
+  if(!any2)h+='<div class="hint" style="margin:0">（空）</div>';h+='</div>';
+  document.getElementById('folders').innerHTML=h;
+}
+function getPreds(){return LS('preds',[])}
+function addPred(){var v=document.getElementById('ptext').value.trim();if(!v)return;var p=getPreds();p.unshift({t:v,d:new Date().toISOString().slice(0,10),s:0});LS('preds',p);document.getElementById('ptext').value='';renderPreds()}
+function renderPreds(){
+  var names=['待驗證','✅ 應驗','❌ 落空'];
+  var h='';getPreds().forEach(function(p,i){
+    h+='<div class="pred">'+esc(p.t)+'<div class="pm">📅 '+p.d+' 記低</div><span class="st '+(p.s===1?'ok':p.s===2?'bad':'')+'" onclick="var ps=getPreds();ps['+i+'].s=(ps['+i+'].s+1)%3;LS(\'preds\',ps);renderPreds()">'+names[p.s]+'（撳切換）</span></div>';
+  });
+  document.getElementById('predlist').innerHTML=h||'<div class="empty">仲未有預測</div>';
+}
+function saveKw(){localStorage.setItem('kw_manual',document.getElementById('kwbox').value)}
+function renderReports(){
+  var h='';(WEEKLY_REPORTS||[]).forEach(function(r){h+='<div class="report"><h3>📰 '+esc(r.title)+'</h3><div class="rw">'+esc(r.body)+'</div></div>'});
+  document.getElementById('reportlist').innerHTML=h||'<div class="empty">第一份週報等週日 cron 生成</div>';
+}
+document.querySelectorAll('nav button').forEach(function(b){b.onclick=function(){if(b.dataset.v==='ai'||b.dataset.v==='policy'||b.dataset.v==='social'){filter=b.dataset.v;renderList();show('list')}else show(b.dataset.v)}});
+renderTags();renderList();
+</script>
+</body>
+</html>
