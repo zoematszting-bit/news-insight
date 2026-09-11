@@ -2,6 +2,37 @@
 // 新增文章：unshift 到陣列最前
 const ARTICLES = [
   {
+    id: "2026-09-11-openai-chatgpt-finance",
+    board: "ai",
+    title: "OpenAI 推出金融服務版 ChatGPT：垂直行業 Agent 產品嘅教科書示範",
+    date: "2026-09-11",
+    tags: ["商業參考", "產品靈感"],
+    sources: [
+      { org: "Fortune", title: "OpenAI courts Wall Street with ChatGPT for Financial Services, developed with Morgan Stanley", date: "2026-09-10", url: "https://fortune.com/2026/09/10/openai-courts-wall-street-with-chatgpt-for-financial-services-developed-with-morgan-stanley/" },
+      { org: "Bloomberg", title: "OpenAI Debuts ChatGPT for Financial Services, an Investment Banker Tool", date: "2026-09-10", url: "https://www.bloomberg.com/news/articles/2026-09-10/openai-debuts-chatgpt-for-financial-services-an-investment-banker-tool" },
+      { org: "OpenAI 官方", title: "ChatGPT for Financial Services 發佈公告", date: "2026-09-10", url: "https://openai.com/news/" }
+    ],
+    verifiedDate: "2026-09-11",
+    summaryShort: "OpenAI 9月10日推出金融業專用 ChatGPT（GPT-6 Astra），Morgan Stanley 參與設計，約50個MCP數據連接器＋企業級權限，定價未公佈。",
+    summary: "OpenAI 9月10日推出「ChatGPT for Financial Services」——金融業專用版ChatGPT，行最新GPT-6 Astra型號，由Morgan Stanley同Evercore參與設計核心功能。產品可連接銀行現有嘅Bloomberg、FactSet訂閱，預載Daloopa、PitchBook、Crunchbase、LSEG News等數據，經MCP協議提供約50個連接器，輸出附詳細引用；可生成PowerPoint、Excel同網頁儀表板；設「投入度切換」控制token消耗同輸出品質；企業級私隱配SAML SSO、SCIM、角色權限同數據保留設定。需要ChatGPT Enterprise帳戶＋資格審核先可以購買，定價未公佈。",
+    coreAnalysis: "呢係「通用模型→垂直行業產品」轉向嘅教科書案例，成條產品公式可以直接抄：①揀高付費能力行業（金融）②同龍頭客戶共同設計（Morgan Stanley、Evercore——負責人明講目標係「銀行真係會用，唔係demo好睇」）③用數據連接做護城河（50個MCP連接器＋引用輸出）④用企業權限做門檻（Enterprise＋資格審核＝銷售主導定價，所以先唔公佈價）。我手上嘅產品線全部可以套呢條公式檢視：學費追蹤已經係垂直場景（補習社）；考試系統嘅「垂直版」就係ACO/PSII專用。",
+    dims: [
+      {
+        title: "5️⃣ 商業參考庫",
+        body: "產品形態：通用AI加行業皮唔夠——要有行業數據管道（訂閱駁接）先行業化。\n定價模式：唔公佈定價＋資格審核＝大客銷售主導，同自助訂閱係兩個世界。\n競爭格局：Anthropic 2025年7月已出過金融分析版Claude——垂直化係全行業共同方向，先做唔夠，要連接器生態深。"
+      },
+      {
+        title: "1️⃣ 產品功能升級靈感",
+        body: "三個可以直接偷嘅設計：\n①「effort toggle」——用同一個掣平衡成本同品質，我嘅內容Agent都可以加（簡單稿低投入、深度稿高投入）\n②引用輸出係打擊幻覺嘅產品級解法，新聞網站嘅分析應該行同一條路\n③MCP連接器係Agent課程階段4嘅現成教材——OpenAI用50個連接器將「AI工具」變成「工作台」"
+      }
+    ],
+    actions: [
+      "Agent課程學Function Calling／MCP嗰課，用呢單做案例作業",
+      "用「行業版公式」（行業＋龍頭共設＋數據連接＋企業門檻）檢視自己6個產品，邊個最有可能行呢條路",
+      "留意香港金融界採用情況——同綠色周「綠色金融科技」線匯合，係香港AI落地主戰場"
+    ]
+  },
+  {
     id: "2026-09-07-hk-green-week-2026",
     board: "policy",
     title: "第三屆香港綠色周今日開幕：施政報告前九日嘅政策風向標",
