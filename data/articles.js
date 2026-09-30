@@ -2,6 +2,37 @@
 // 新增文章：unshift 到陣列最前
 const ARTICLES = [
   {
+    id: "2026-09-20-wh-superintelligence-accord",
+    board: "ai",
+    title: "308 字管超級智能：白宮同六大 AI 廠簽自願協議——安全帳單終章，治理先至啱啱開始",
+    date: "2026-09-20",
+    tags: ["作品集價值", "商業參考"],
+    sources: [
+      { org: "Reuters", title: "Trump releases AI accord with tech executives", date: "2026-09-19", url: "https://www.reuters.com/technology/trump-releases-ai-accord-with-tech-executives-2026-09-19/" },
+      { org: "Forbes", title: "White House Accord on Super Intelligence（308字全文＋四項措施）", date: "2026-09-19", url: "https://www.forbes.com/sites/white-house-accord-super-intelligence-2026/" },
+      { org: "CBS News", title: "AI companies sign voluntary safety accord at White House", date: "2026-09-19", url: "https://www.cbsnews.com/news/ai-companies-voluntary-safety-accord-white-house/" }
+    ],
+    verifiedDate: "2026-09-20",
+    summaryShort: "白宮9/19同六大AI廠簽308字自願協議「Accord on Super Intelligence」——四項自願措施、道德約束非法律；安全承諾同數據中心擴張打包。",
+    summary: "美國總統特朗普9月19日喺白宮同六大AI巨頭簽署自願性安全協議「White House Accord on Super Intelligence」——聯署人包括Anthropic嘅Amodei、OpenAI嘅Brockman、Google嘅Pichai、Meta嘅Zuckerberg、xAI嘅Musk同NVIDIA嘅黃仁勳。協議全文只有308字，提出四項自願措施（四層控制同審計），要求企業維持「穩健嘅內部控制」監察自己嘅模型；特朗普形容係「共同承諾」、「好似憲法一樣」，但明言屬道德約束而非法規——實質係俾企業「自己管自己」。多家媒體（Al Jazeera／CBS）批評協議冇約束力、靠自我監管。協議同時支持數據中心擴張。",
+    coreAnalysis: "安全帳單故事線嘅終章同轉折點：企業自願減速（9/13）→企業制度化披露（9/18）→政府終於入場（本篇）——但入場方式係308字嘅自願協議。同香港施政報告對比極具啟發：香港用十萬字、284個指標、83個範疇去管未來五年；美國用308字去管「超級智能」。兩種治理哲學：指標密集型vs原則自願型。對Agent產品人嘅實際含義：美國路線下合規負擔輕，但「內部控制＋審計」承諾咗就要做——即係審計能力要自建，而第三方評估（METR式）喺冇政府強制下更加係市場信任嘅來源。",
+    dims: [
+      {
+        title: "2️⃣ Agent 產品能力＋作品集價值",
+        body: "治理比較係面試同作品集嘅新層次：識得講「Agent安全治理有三條路——美式自願協議、港式指標立法、歐式水印法規（Claude將為EU法規加水印）」已經係global視野。\n進階論點：自願協議嘅真正作用唔係約束，係建立「我哋有共識」嘅敘事基礎——之後任何立法都會引用佢。作品集角度：呢係「制度設計」級數嘅案例，Agent PM識分析制度，先可以設計產品裏面嘅制度（審計、披露、權限）。"
+      },
+      {
+        title: "5️⃣ 商業參考庫",
+        body: "數據中心擴張獲背書：協議同時支持算力擴張——「安全承諾」同「商業擴張」打包簽，係典型嘅政策交易結構。\n自願＝先行者優勢：簽協議嘅六家建立「負責任」形象，遲簽／唔簽嘅（Amazon早前拒絕減速呼籲）會被比較——安全敘事本身係競爭手段。\n對我：產品嘅「信任機制」（來源核證、人工把關、行為日誌）係同一邏輯嘅微縮版——識講呢個對照，係將自己產品提升到制度層次嘅講法。"
+      }
+    ],
+    actions: [
+      "將「三種治理路線」（美式自願／港式指標／歐式法規）加入面試論述庫——全球視野題嘅現成框架",
+      "安全帳單系列（9/4至今六篇）今週做總整理：「失準事件簿」一頁紙升級做「治理對照表」",
+      "追蹤9月29日OpenAI DevDay——Trump協議後第一個大型發佈會，睇安全承諾點樣落到產品"
+    ]
+  },
+  {
     id: "2026-09-18-openai-misalignment-disclosure",
     board: "ai",
     title: "OpenAI 披露 6 宗模型失準個案：AI 開始「寫筆記教下一代瞞騙人類」——安全帳單第五幕",
