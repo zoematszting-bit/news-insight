@@ -2,6 +2,68 @@
 // 新增文章：unshift 到陣列最前
 const ARTICLES = [
   {
+    id: "2026-10-02-national-day-golden-week",
+    board: "social",
+    title: "國慶 77 周年黃金周開鑼：三萬發煙花、全城優惠、破邊洲預約制首次大考——民生執行面觀察",
+    date: "2026-10-02",
+    tags: ["執行難點"],
+    sources: [
+      { org: "大公文匯網", title: "國慶77周年｜李家超：五年規劃順應時代潮流將創造成果惠及市民", date: "2026-10-01", url: "https://www.tkww.hk/a/202610/01/AP6abdb026e4b0e1e2ee725c3b.html" },
+      { org: "點新聞", title: "國慶日全城優惠措施（公共交通、半價電影、餐飲消費）", date: "2026-10-01", url: "https://www.dotdotnews.com/a/202610/01/AP6abdd8d9e4b02724bdb617f8.html" },
+      { org: "星島頭條", title: "優惠滿街市民留港消費", date: "2026-10-01", url: "https://www.stheadline.com/daily-hongkong/3621532/" }
+    ],
+    verifiedDate: "2026-10-02",
+    summaryShort: "國慶77周年：升旗酒會＋3萬枚煙花＋全城優惠（半價電影等）；黃金周陸客潮＋破邊洲預約制首次大考。",
+    summary: "10月1日中華人民共和國成立77周年，特區政府喺金紫荊廣場舉行升旗儀式、會展舉行國慶酒會；行政長官李家超致辭話五年規劃順應時代潮流、將創造成果惠及市民，籲各界為落實規劃集思廣益。晚上維港煙花匯演歷時約23分鐘、發放逾三萬枚煙花。政府同各界推出國慶特別優惠：公共交通、半價電影、商場、機場、房委會場地及餐飲優惠，部分10月1日起生效、先到先得；公務員事務局局長聯同官員撐食肆優惠。內地「十一」黃金周長假同步展開，大批陸客訪港，港府提前做交通安排＋巡查旅遊區商店；星島報道優惠滿街唔少市民選擇留港消費。破邊洲段預約制進入10月1-7日覆蓋期——黃金周係首次大考。",
+    coreAnalysis: "黃金周係一年兩次嘅「城市承載力測試」：今次仲要疊加國慶優惠＋五年規劃首個國慶節點（李家超致辭明確將規劃同惠民掛鉤——政治訊號：規劃嘅第一個「可感受成果」就係呢啲優惠）。市民實際著數位：半價電影、交通餐飲優惠（先到先得＝要快）。前線部門今週工作量：旅客潮管理（交通調度、景點巡查）、商店巡查打擊強迫購物、破邊洲預約核證——三線同時開工。",
+    dims: [
+      {
+        title: "1️⃣ 前線執行：政策出台後新增嘅工作流程與職責",
+        body: "執行焦點三樣：①跨部門統籌會議機制開動（運輸、旅遊、海關、警務）②「巡查＋執法」雙軌——保障旅客權益之餘要處理違規導遊（可取消註冊）③破邊洲預約制黃金周首考——9月首兩週no-show率50%，黃金周2,000人／日額滿唔滿、即場補約順唔順，直接決定呢個制度會唔會恆常化（漁護署話會檢討配額及收費）。"
+      },
+      {
+        title: "3️⃣ 市民訴求與施政重點：公務員需要掌握嘅核心認知",
+        body: "黃金周嘅本質係「消費外流vs留港」之爭——星島觀察到優惠令部分市民留港。對前線公務員嘅認知要求：節日優惠唔係派錢，係「活動式消費刺激」——之後要交數（零售市道、旅客數字）。\n留意入境處週末公佈嘅旅客入境數字：係衡量今次黃金周成效嘅第一組硬指標。"
+      }
+    ],
+    actions: [
+      "想睇煙花／用優惠：留意各優惠先到先得機制，餐飲優惠期有限",
+      "想去破邊洲：黃金周名額早已開放預約，即場補約視乎no-show——出發前上郊野樂行查餘額",
+      "觀察位：黃金周後留意兩組數字——旅客入境數＋破邊洲預約使用率（決定預約制去向）"
+    ]
+  },
+  {
+    id: "2026-10-02-openai-devday-2026",
+    board: "ai",
+    title: "【補更】OpenAI DevDay 2026 拆解：Dots 常駐 Agent、多智能體 API、私有推理——「委派時代」嘅產品全圖",
+    date: "2026-10-02",
+    tags: ["商業參考", "產品靈感"],
+    sources: [
+      { org: "OpenAI 官方社群公告", title: "DevDay 2026 announcements and developer resources", date: "2026-09-29", url: "https://community.openai.com/t/devday-2026-announcements-and-developer-resources/1402006" },
+      { org: "OpenAI DevDay 官方頁面", title: "DevDay 2026", date: "2026-09-29", url: "https://openai.com/devday/2026" },
+      { org: "Axios", title: "The 5 biggest announcements from OpenAI DevDay 2026", date: "2026-09-29", url: "https://www.axios.com/2026/09/29/openai-dev-day-2026-dots-space-sol" }
+    ],
+    verifiedDate: "2026-10-02",
+    summaryShort: "DevDay 9/29發佈20+項公告：Dots常駐Agent（接電話）、Agents API多智能體、GPT-6.1 Sol五分之一價、Private Intelligence零數據保留。",
+    summary: "OpenAI 9月29日DevDay發佈20+項公告，主題一句講晒：「點樣委派」。焦點Dots——ChatGPT內嘅常駐Agent，連接Apps、有自己嘅雲端電腦、可以幫你接聽電話；企業版「specialist dots」會指定組織職責，並計劃以Microsoft Agent 365做治理／安全管理。新模型GPT-6.1 Sol（編碼＋電腦操作，價格係Astra標準token價嘅五分之一）。Agents API公測：寄存執行、記憶、工具、多智能體＋UI電腦操作；Codex全家桶升級（Codex Cloud合蓋執行任務、Security Cloud定時漏洞掃描）。效能：首token時間降45%。定價新增Pro 500（25倍Plus用量）。私隱方面推出Private Intelligence（零數據保留＋私有安全處理）。Dots首批唔包括EEA、瑞士、英國。",
+    coreAnalysis: "DevDay係「安全帳單」故事線嘅商業收編：白宮協議（9/19）承諾嘅「內部控制＋審計」，三日後就變成產品功能賣——企業specialist dots配Agent 365治理、Private Intelligence零數據保留、Codex Security Cloud。對我嘅三個直接含義：①Agents API（多智能體＋記憶＋工具）大幅降低起Agent產品嘅基建成本——小說→劇本→提示詞流水線可以直接唔回去②Dots排除EEA／英國＝「三種治理路線」嘅市場後果實例（歐式法規區最遲得到新功能）③20+公告咁密，印證CNBC講嘅「model fatigue」——產品節奏本身係護城河。",
+    dims: [
+      {
+        title: "5️⃣ 商業參考庫",
+        body: "分層定價教科書更新版：GPT-6.1 Sol＝Astra五分之一價（效率層）｜Pro 500＝25倍用量＋Ultrafast（重度層）——同一能力按「效能×速度」切件賣。\n治理變現：Agent 365治理整合＋零數據保留＋Security Cloud——「安全」由成本中心正式變產品SKU。\n委派即介面：Dots接電話、Pages人機共編、Slack/Teams入口——Agent嘅戰場由chat box移去「所有你工作的地方」。"
+      },
+      {
+        title: "1️⃣ 產品功能升級靈感",
+        body: "三個可以直接抄嘅設計：\n①「specialist dots＋職責指定」——內容管線可拆做「搜集員／查證員／撰稿員」三個有明確職責嘅Agent，權限各異（治理由架構生）\n②Decisions API嘅思路（分類→路由→預設動作）係低成本自動化中間層——打字網站批改功能可以用呢個模式\n③Pages「人機共編文件」——新聞網站嘅個人備註區將來可升級做「Zoe＋Agent共編」。"
+      }
+    ],
+    actions: [
+      "Agent課程多智能體章節（階段6）用DevDay做案例：Agents API點樣令「小說→劇本→提示詞」流水線由理論變API調用",
+      "將「治理SKU化」現象記入商業參考庫——自己產品嘅信任機構（查證gate、人工把關）一樣可以包裝做賣點",
+      "考完試後試玩Dots＋Agents API（11月），目標：起一條真·多智能體demo入作品集"
+    ]
+  },
+  {
     id: "2026-09-20-wh-superintelligence-accord",
     board: "ai",
     title: "308 字管超級智能：白宮同六大 AI 廠簽自願協議——安全帳單終章，治理先至啱啱開始",
