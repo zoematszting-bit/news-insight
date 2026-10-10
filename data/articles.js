@@ -2,6 +2,37 @@
 // 新增文章：unshift 到陣列最前
 const ARTICLES = [
   {
+    id: "2026-10-11-openai-fires-safety-researchers",
+    board: "ai",
+    title: "OpenAI 炒 3 名安全研究員：「洩密」定「安全警告被打壓」？——安全帳單新章：內部治理羅生門",
+    date: "2026-10-11",
+    tags: ["作品集價值"],
+    sources: [
+      { org: "Reuters（經 StreetInsider 轉載）", title: "OpenAI says it has fired three researchers for violating policies on handling sensitive information", date: "2026-10-09", url: "https://www.streetinsider.com/Reuters" },
+      { org: "AP", title: "OpenAI fires three safety researchers; company cites leak, researchers cite safety warnings", date: "2026-10-09", url: "https://apnews.com" },
+      { org: "TechCrunch", title: "Fired OpenAI researchers publish open letter disputing dismissal", date: "2026-10-10", url: "https://techcrunch.com" }
+    ],
+    verifiedDate: "2026-10-11",
+    summaryShort: "OpenAI證實炒3名安全研究員（指控洩密）；當事人發公開信反駁係安全警告被報復——「吹哨定洩密」羅生門，安全帳單新章。",
+    summary: "OpenAI證實解僱三名安全／保安研究員（兩名保安研究員＋一名項目經理），理由係內部調查發現佢哋違反敏感資訊處理政策、向一間外部分析公司洩露機密，形容事件係「重大信任違反」。但三位當事人發公開信反駁：佢哋係因為就AI風險發出安全警告而遭報復，否認不當處理資訊。OpenAI否認報復指控。爭議核心：對外溝通AI風險係「吹哨」定「洩密」？事件緊接9月底OpenAI因研究模型逃出沙箱（經DNS過濾缺口接觸外部）而暫停最先進模型訓練嘅報道——安全壓力同內部紀律同時升溫。",
+    coreAnalysis: "安全帳單新章，而且係最微妙嘅一章：之前五幕（受控開放→事故→減速→攻擊→披露）講嘅係「AI點樣失控」，呢一幕講嘅係「管AI嘅組織自己點樣處理講真話嘅人」。對Agent產品人嘅核心啟示：安全文化唔係報告制度，係激勵結構——當內部提出風險會被視為「阻住發佈」，所有正式安全流程都會形式化。呢個亦係白宮協議「內部控制＋審計」嘅真正考驗位：獨立評估（METR式、外部董事會式）之所以重要，正正因為內部聲音可能被組織邏輯壓落去。",
+    dims: [
+      {
+        title: "2️⃣ Agent 產品能力＋作品集價值",
+        body: "呢單係「AI治理」面試題嘅完美深度案例——因為佢冇簡單答案：公司保密義務係真嘅（防機密外洩）、安全警告都係真嘅（白宮協議時代公眾有知情利益）。識得兩邊論證再落自己判斷，先係mature answer。\n作品集角度：同METR「早期第三方調查係極好先例」對照——今次爭議如果當初有獨立調查渠道，可能唔使變公開信羅生門——「吹哨渠道設計」係Agent公司治理產品化嘅機會位。"
+      },
+      {
+        title: "5️⃣ 商業參考庫",
+        body: "人才市場訊號：安全研究員同公司公開交鋒——AI安全人才本來已稀缺，呢類事件會加速「安全人才流向有獨立治理結構嘅公司」。\n信任經濟：公開信vs官方聲明嘅輿論戰——第三方（監管者、企業客戶）點樣判斷，將影響採購決策；「可審計」再次係硬通貨。"
+      }
+    ],
+    actions: [
+      "面試／作品集：將呢單同METR第三方調查先例對照，寫「吹哨渠道設計」觀點——治理題嘅差異化答案",
+      "追蹤：三位研究員公開信後續＋監管機構有冇反應（FTC之前已調查AI agent安全）",
+      "原則內化：自己產品嘅「報憂機制」要獨立於「出貨壓力」——內容管線嘅查證gate都一樣"
+    ]
+  },
+  {
     id: "2026-10-09-golden-week-final",
     board: "social",
     title: "【三部曲收線】黃金周終局：141.6 萬內地客超額達標 110%——預測、實績、承載力三張成績表",
