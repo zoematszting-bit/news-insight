@@ -2,6 +2,37 @@
 // 新增文章：unshift 到陣列最前
 const ARTICLES = [
   {
+    id: "2026-10-19-meta-wonder-models",
+    board: "ai",
+    title: "Meta Wonder 重返前沿：由開源 Llama 到付費牆——一場 145 億美元嘅戰略大逆轉（附本站攔截更正）",
+    date: "2026-10-19",
+    tags: ["商業參考"],
+    sources: [
+      { org: "TechXplore", title: "Meta says its new AI models on par with OpenAI, Anthropic（Wonder＋Wonder Full）", date: "2026-10-12", url: "https://techxplore.com/news/2026-10-meta-ai-par-openai-anthropic.html" },
+      { org: "Reuters", title: "Meta releases Muse, Wonder AI models to challenge Anthropic, OpenAI", date: "2026-10-12", url: "https://www.reuters.com/business/meta-releases-muse-wonder-ai-models-challenge-anthropic-openai-2026-10-12" },
+      { org: "Axios", title: "Meta's new frontier models（交叉核證）", date: "2026-10-12", url: "https://www.axios.com/2026/10/12/meta-new-ai-models-anthropic-openai" }
+    ],
+    verifiedDate: "2026-10-19",
+    summaryShort: "Meta 10/12發佈前沿模型Wonder＋Wonder Full（聲稱比肩ChatGPT/Claude）——最貴之一＋只限付費訂閱；開源Llama時代正式落幕，年投資可達$145B。",
+    summary: "Meta 10月12日發佈兩個前沿模型Wonder同Wonder Full，聲稱達到OpenAI ChatGPT同Anthropic Claude嘅水平。朱克伯格形容Wonder係「更大更先進嘅模型級別，將我哋帶返前沿」；首席AI官Alexandr Wang話係Meta「最大最強」模型。獨立基準機構Artificial Analysis嘅數據顯示Wonder系列超越Meta早前嘅Spark系列同OpenAI／Anthropic／Google嘅多個模型——但Wonder亦係市場上最貴嘅模型之一，而且只對付費訂閱者開放，經Meta嘅Muse agent app提供。背景：Meta年內AI投資可達1,450億美元，4月嘅Spark已放棄開源Llama路線，8-9月推出Muse Code同agentic Muse app。",
+    coreAnalysis: "三個直接相關位：①開源時代正式落幕嘅標誌——Meta曾經係開源陣營旗手（Llama），而家連佢都行封閉付費：免費高質模型供應收窄，成本規劃要預全線付費化②獨立基準係公信力槓桿——Meta攞Artificial Analysis（第三方）做賣點，同AI治理線嘅「獨立評估」係同一信任邏輯：自評冇人信，第三方先係硬通貨③agent app做分發渠道——模型唔單獨賣，綁喺Muse app入面：模型能力產品化、訂閱化係行業大方向。",
+    dims: [
+      {
+        title: "5️⃣ 商業參考庫",
+        body: "戰略逆轉嘅教科書：開源（換生態）→滯後→$14B買Scale AI＋請Wang→閉源付費（換收入）——兩年內完成180度轉向，展示「路線係由競爭位置決定，唔係由理念決定」。\n定價結構：「最貴之一＋只有訂閱」——Meta用封閉模型直接變現，同廣告模式並軌。\n基準營銷：獨立機構數據做發佈會核心賣點——第三方認證已經係產品發佈嘅標配。"
+      },
+      {
+        title: "2️⃣ 市場競爭格局（Agent 產品視角）",
+        body: "四巨頭格局更新：OpenAI（Astra+金融版）、Anthropic（5.5家族三級）、Google（Gemini系列）、Meta（Wonder+Muse app）——每家都用「家族階梯＋訂閱」結構。\n對我做產品：上游四選一變成「生態四選一」（API／app／企業版各有綁定），揀邊家唔再淨係睇模型分數，係睇分發渠道同遷移成本。"
+      }
+    ],
+    actions: [
+      "商業參考庫更新：Meta戰略逆轉全案（開源→付費180度）＋獨立基準營銷",
+      "產品成本規劃：預「免費高質模型絕跡」情景——任務分級（Haiku級）策略更加要快做",
+      "本站把關透明度：今次「攔截→更正→補稿」全記錄已喺文首標明——真偽把關係要快，亦要認錯得快"
+    ]
+  },
+  {
     id: "2026-10-17-huanggang-port-reopening",
     board: "social",
     title: "【補更】新皇崗口岸開通：24 小時通關、一地兩檢 5 分鐘過關——深港融合嘅實體動作",
