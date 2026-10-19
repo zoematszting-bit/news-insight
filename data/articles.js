@@ -2,6 +2,37 @@
 // 新增文章：unshift 到陣列最前
 const ARTICLES = [
   {
+    id: "2026-10-20-openai-textgrain-watermark",
+    board: "ai",
+    title: "OpenAI textGrain 水印登場：AI 文字終於有「出生證明」——歐式法規逼出嘅透明度基建",
+    date: "2026-10-20",
+    tags: ["商業參考", "產品靈感"],
+    sources: [
+      { org: "OpenAI 官方", title: "Our approach to EU text provenance rules（textGrain技術說明）", date: "2026-10-05", url: "https://openai.com/index/eu-text-provenance" },
+      { org: "TechCrunch", title: "OpenAI will start watermarking ChatGPT's text in the EU（含外部研究者合著技術報告）", date: "2026-10-05", url: "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu" },
+      { org: "PCMag", title: "OpenAI to Add Watermarks on ChatGPT's Text Outputs, But Only in the EU", date: "2026-10-05", url: "https://www.pcmag.com/news/openai-to-add-watermarks-on-chatgpts-text-outputs-but-only-in-the-eu" }
+    ],
+    verifiedDate: "2026-10-20",
+    summaryShort: "OpenAI 10/5公佈textGrain隱形文字水印——EU先行（AI Act合規）、API全球opt-in；remover工具兩週內出現，水印貓鼠遊戲開幕。",
+    summary: "OpenAI 10月5日公佈textGrain——隱形、機器可讀嘅文字水印系統，嵌入ChatGPT同Codex嘅輸出文字，先喺歐盟推出以符合EU AI Act嘅來源透明度要求；API用家可以全球opt-in（預設關閉）。技術上係喺文字加入隱形統計訊號，用OpenAI嘅探測器先讀到；官方同時發表同外部研究者合著嘅技術報告。官方測試承認：重度改寫會削弱偵測準確度。推出後唔夠兩星期，第三方「textGrain remover」工具已經出現——水印同除水印嘅貓鼠遊戲開幕。呢個緊接Anthropic早前宣佈為Claude文字加水印——水印競賽正式成形。",
+    coreAnalysis: "呢係「三種治理路線」框架（本站9/20建立）最生動嘅實證更新：歐式法規唔係講嘢——直接逼出咗一個技術基建（文字來源證明）。而且路線差異即刻見效：EU用家有水印、其他地區opt-in——同一個產品，唔同監管區得到唔同嘅透明度。對我嘅直接意義：①內容生態進入「有出生證明」時代——我條內容管線遲早要識別同處理水印文字，自己嘅輸出都應該諗provenance標示②水印係新聞站「來源核證」嘅技術親戚——查證gate（來源白名單）＋水印探測（內容來源）係同一個信任系統嘅兩面。",
+    dims: [
+      {
+        title: "5️⃣ 商業參考庫",
+        body: "合規驅動功能：EU AI Act逼出textGrain——法規要求變產品功能，「法規紅利」另一面：以前係安全工具，而家係透明度基建。\n市場分裂模式：EU先行＋全球opt-in——同一功能按監管區分期發佈，跨境產品新標準做法（同Dots排除EEA同一邏輯）。\n貓鼠經濟：Remover工具兩週內出現——水印系統必然催生對抗市場，探測器精度＝軍備競賽。"
+      },
+      {
+        title: "1️⃣ 產品功能升級靈感",
+        body: "即時可以諗嘅三步：①內容管線加「provenance欄位」——每篇稿記錄生成方式（AI起稿/人工核證/官方來源），呢個係自己嘅「水印」②新聞站來源卡片理論上可以加「已檢測」標籤（當API opt-in開放）③長遠：「可驗證內容」係差異化賣點——喺假新聞氾濫時代，透明嘅生產流程本身係產品。"
+      }
+    ],
+    actions: [
+      "商業參考庫更新：水印競賽（Anthropic→OpenAI）＋合規驅動功能＋市場分裂模式三案例一組",
+      "內容管線今週加provenance欄位（同dry-run、任務分級一齊做——三件套）",
+      "追蹤：香港會唔會跟（施政報告深偽立法研究係同一條線——亞洲版透明度要求？）"
+    ]
+  },
+  {
     id: "2026-10-19-meta-wonder-models",
     board: "ai",
     title: "Meta Wonder 重返前沿：由開源 Llama 到付費牆——一場 145 億美元嘅戰略大逆轉（附本站攔截更正）",
