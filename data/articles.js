@@ -2,6 +2,37 @@
 // 新增文章：unshift 到陣列最前
 const ARTICLES = [
   {
+    id: "2026-10-24-openai-on-google-cloud",
+    board: "ai",
+    title: "OpenAI 模型上 Google Cloud 賣：最大敵人做埋分銷商——雲端變成 AI 中立基建嘅分水嶺",
+    date: "2026-10-24",
+    tags: ["商業參考", "產品靈感"],
+    sources: [
+      { org: "Reuters", title: "OpenAI to sell its top models on Google Cloud in latest enterprise push", date: "2026-10-21", url: "https://www.reuters.com/business/retail-consumer/openai-sell-its-top-models-google-cloud-latest-enterprise-push-2026-10-21" },
+      { org: "CNBC", title: "OpenAI brings its AI models to Google's cloud, expands beyond Microsoft", date: "2026-10-21", url: "https://www.cnbc.com/2026/10/21/openai-bring-its-ai-models-to-googles-cloud-expands-beyond-microsoft.html" },
+      { org: "The Decoder", title: "Google Cloud becomes only major cloud offering Gemini, Claude and OpenAI models on one platform", date: "2026-10-21", url: "https://the-decoder.com" }
+    ],
+    verifiedDate: "2026-10-24",
+    summaryShort: "OpenAI 10/21宣佈模型上Google Cloud賣（跳出Azure獨家）——Google Cloud成唯一同場三前沿家族雲平台；coopetition分水嶺。",
+    summary: "OpenAI 10月21日宣佈旗下模型將透過Google Cloud提供畀開發者——正式跳出Microsoft Azure單一渠道。企業客戶可以直接用現有Google Cloud消費承諾購買OpenAI技術（對受監管企業係重要賣點）。呢個安排令Google Cloud成為唯一同時提供Gemini、Claude、OpenAI三大前沿家族嘅主要雲平台——Google一邊同OpenAI打模型戰，一邊做佢哋嘅分銷商。背景：Anthropic同Google已有千億級雲協議（最多百萬TPU），2025年Anthropic約47%收入經AWS同Google Cloud而嚟——「模型廠靠敵對雲端賺錢」已經係行業常態。",
+    coreAnalysis: "「模型綁生態」嘅格局鬆動咗：以前揀模型＝揀雲（Azure用OpenAI、GCP用Gemini），而家Google Cloud一個平台三大家族任揀——對做產品嘅人，遷移成本同比較成本同時下降，多模型策略（我嘅「任務×模型分級」）由要跨雞蛋籃變成一個籃入面揀。第二層啟示：分銷＞對抗——Google肯賣敵人嘅模型，因為雲端利潤同鎖定效應大過模型戰嘅輸贏；同一邏輯：平台型產品嘅護城河係「成為必經之路」，唔係「打贏所有人」（APEC嘅「場地中立」係國際政治版同一課）。",
+    dims: [
+      {
+        title: "5️⃣ 商業參考庫",
+        body: "coopetition定價：敵對平台互售——Google收雲端錢、OpenAI收模型錢，敵人合作嘅前提係利潤切分清晰。\n企業採購新邏輯：「用現有雲消費承諾買AI」——採購整合係企業市場真實痛點，邊個簡化採購邊個贏。\n對照組：Meta封閉付費（10/19篇）vs OpenAI全渠道分銷——兩種相反策略同時存在：無標準答案，只有「同自己商業模式夾唔夾」。"
+      },
+      {
+        title: "1️⃣ 產品功能升級靈感",
+        body: "即時更新「任務×模型」分級表嘅採購欄：而家可以單一雲平台做三家族混合調度——批改用Haiku級、深度分析用旗艦級、代碼用Codex級，全部同一帳單同一API生態。\n未來打字網站AI功能嘅基建決策因此簡化：揀一個雲，唔使揀陣營。"
+      }
+    ],
+    actions: [
+      "商業參考庫：coopetition案例三連（APEC場地中立／Meta封閉對照／Google×OpenAI互售）一組記入",
+      "產品決策：AI功能基建預設「單雲多模型」，留遷移彈性",
+      "追蹤：Microsoft點回應（Azure獨家時代結束嘅後續）；三家族同場後嘅價格戰"
+    ]
+  },
+  {
     id: "2026-10-23-tourism-hotspots-batch2",
     board: "social",
     title: "旅遊熱點工作組下一波：Q4 推四個特色項目——「深度遊共識」由預測變政策（又一個應驗）",
