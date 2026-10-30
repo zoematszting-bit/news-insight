@@ -2,6 +2,69 @@
 // 新增文章：unshift 到陣列最前
 const ARTICLES = [
   {
+    id: "2026-10-30-wangfukyuen-report-reform",
+    board: "policy",
+    title: "宏福苑火災報告出爐：局長辭職・120項建議・圍標刑事化——「業內誠信」監管模式嘅總清算",
+    date: "2026-10-30",
+    tags: ["公務員考試", "執行難點"],
+    sources: [
+      { org: "政府新聞公報 news.gov.hk（官方一手）", title: "大埔火災報告公開 推行全面改革", date: "2026-10-29", url: "https://www.news.gov.hk/chi/2026/10/20261029/20261029_160028_023.html" },
+      { org: "政府新聞公報 news.gov.hk（特首記者會）", title: "政策局及部門全面配合改革（行政長官記者會）", date: "2026-10-29", url: "https://www.news.gov.hk/chi/2026/10/20261029/20261029_171643_625.html" },
+      { org: "HK01", title: "宏福苑報告記者會總覽（特首率官員鞠躬道歉・何永賢請辭）", date: "2026-10-29", url: "https://www.hk01.com/社會新聞/60405073/" },
+      { org: "香港電台 RTHK", title: "新聞天地（10月29日）：宏福苑報告公開＋120項建議", date: "2026-10-29", url: "https://news.rthk.hk" }
+    ],
+    verifiedDate: "2026-10-30",
+    summaryShort: "宏福苑報告：168死・120項建議・何永賢請辭・圍標刑事化七項改革——政治＋行政雙軌問責完整示範。",
+    summary: "大埔宏福苑火災獨立調查委員會報告10月29日公開：火災造成168人死亡（包括一名殉職消防員）、1,984個家庭受影響，委員會提出120項建議。報告認定監管制度過度倚賴業內人士誠信、監督名存實亡，樓宇維修成為黑社會圍標壟斷對象。行政長官李家超宣佈七項全面改革——立法將圍標納入《有組織及嚴重罪行條例》、成立跨部門特遣隊、新設樓宇維修支援及服務局、改革屋宇署架構、建立跨部門中央數據系統、成立政務司司長主持嘅督導委員會。問責行動：房屋局局長何永賢請辭（即日停止職務、報請中央免職）、財政司副司長黃偉綸兼任署理房屋局局長、啟動部門首長責任制兩級調查機制（涉獨立審查組、屋宇署、消防處、勞工處，敍用委員會三個月內完成，料40至50人受查）。完整報告待刑事程序完成後公開。",
+    coreAnalysis: "呢單係問責制運行以嚟最完整嘅「政治問責＋行政問責」雙軌示範，三層結構：①政治責任層——局長請辭承擔政治責任但「不涉個人犯錯」，分清制度失效嘅政治承擔同個人瀆職②行政責任層——部門首長責任制＋兩級調查機制，轉介敍用委員會係正式紀律程序入口③制度改革層——120項建議由政務司司長督導委員會逐一檢視。對備考者係時事常識題、面試處境題（部門監督失效點處理）頭號素材；對在職者，未來三個月敍用委員會調查係政府內部治理議程重心。",
+    dims: [
+      {
+        title: "2️⃣ 制度設計教訓：「倚賴誠信」等於「冇監管」",
+        body: "報告最狠一句係監督「名存實亡」：制度假設業內人士自律，結果阻燃物料被冒充、走火樓梯被擅自開生口都冇人攔住。\n監管設計教科書案例：合規審查必須假設最壞情況（獨立驗證、交叉抽查），唔可以將安全關口交畀被監管者自己申報。\n呼應「先登記後執法」式自主申報制度（簡樸房）嘅爭論：申報制要配強力抽查同刑事後果先企得住。"
+      },
+      {
+        title: "4️⃣ 執行難點：圍標刑事化嘅舉證考題",
+        body: "圍標納入《有組織及嚴重罪行條例》係向黑社會經濟根開刀：立法易、舉證難——圍標表面程序合法（報價齊、會議齊），罪證藏喺合謀通訊同利益輸送。\n跨部門特遣隊＋中央數據系統就係為舉證而設：數據交叉比對（同集團投標紀錄、中標價格分布）搵異常。\n呢條線執行成效，睇三年內檢控數字就知。"
+      }
+    ],
+    actions: [
+      "面試／考試儲備：背熟「政治責任 vs 行政責任」雙軌問責結構＋四個涉事部門名單——時事題高分位",
+      "追蹤節點：三個月內敍用委員會調查結果＋完整報告公開（刑事程序完成後）——後續新聞高峰",
+      "延伸閱讀：本站10/29簡樸房篇（房屋線）＋10/15施政AI治理篇（監管設計線）——政府治理線三連"
+    ]
+  },
+  {
+    id: "2026-10-30-gemini4-carbon-official",
+    board: "ai",
+    title: "Gemini 4 Carbon 官宣：網絡安全優先・長任務連跑數日——草題轉正，frontier 發布模式由「即用」轉「受控分階段」",
+    date: "2026-10-30",
+    tags: ["產品靈感", "商業參考"],
+    sources: [
+      { org: "Google 官方 blog（blog.google・一手）", title: "Introducing Gemini 4 Carbon（官方發布帖）", date: "2026-10-28", url: "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon" },
+      { org: "The Verge（白名單）", title: "Google launches Gemini 4 Carbon with a 'significant leap'", date: "2026-10-28", url: "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier" },
+      { org: "Ars Technica", title: "Google announces Gemini 4 Carbon, its latest frontier AI model that you can't use", date: "2026-10-28", url: "https://arstechnica.com/ai/2026/10/google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-cant-use" }
+    ],
+    verifiedDate: "2026-10-30",
+    summaryShort: "Gemini 4 Carbon 官宣（10/29草題轉正）：連跑數日長任務＋安全基準全SOTA；先畀cyber defenders，公眾要等——受控分階段發布成新常規。",
+    summary: "Google 10月28日官方 blog 宣布 Gemini 4 Carbon——next frontier model，主打網絡安全同長程任務：連續運行數日、喺大型 codebase 搵出兼修補隱蔽 bug。成績：Artificial Analysis Intelligence Index v5.0 排第一（領先 Claude Opus 5.5 同 GPT-6 Astra）；SEC-bench Pro 88.2%、ExploitGym 54.8%、CWE-bench 71.0% 全 SOTA；Chrome 團隊指高質素 patch 表現比另一實驗室 frontier model 好十倍以上；不實宣稱減少約兩倍、高嚴重性 misalignment 警號降近八成、prompt injection 攻擊成功率歸零。推出模式：參與美國政府自願性 pre-release 測試，當週先開放畀部分 cyber defenders，之後經 Fairwind Program 擴展，公眾要再等；定價同 Argon 開價一樣 $2／$10 每百萬 tokens（優惠期後回復 $4／$20，cache input 95% 折扣）。註：10/29 草題嘅「內部 checkpoint vs 公開發布」矛盾已解——官宣屬實但分階段受控推出。",
+    coreAnalysis: "①「long horizon＋security-first」係 agent 產品下一步剛需——frontier 競爭位已移到「連跑數日嘅工程任務」，產品規劃要將「任務時長」列入賣點維度②「受控分階段發布」成新常規——frontier 模型由「發布即人人可用」變「先安全測試、先信任夥伴」：獨立開發者 API 可用性滯後，路線圖唔可以假設新模型即刻接入，要留 fallback 模型位③網絡安全場景優先開放係明確市場訊號——AI 安全工具（漏洞偵測、代碼審查）係下一波垂直 SaaS 熱位，應用層開發者等 API 開放時直接收割。",
+    dims: [
+      {
+        title: "1️⃣ 產品靈感：「數日任務」改寫用戶預期",
+        body: "連跑數日嘅 agent 令交付單位由「一次對話」變「一張工單」：用戶畀目標（修好成個 codebase 安全漏洞），agent 自己規劃、執行、匯報。\n介面要諗「進度可視化＋中途糾偏」——參考 Genie 4 導演式中途打 prompt 改方向。\n套落自有產品：長任務＝「十二週備考計劃」，agent 每日自主調整出題——同一模式嘅本地化示範。"
+      },
+      {
+        title: "5️⃣ 商業參考：價格雙軌制暗湧",
+        body: "$2／$10 係優惠期價，之後回復 $4／$20——前沿模型定價玩「滲透價釣開發者、原價收割」雙軌制。\n開發者成本模型唔好當優惠價永久：產品定價要預原價空間。\ncache input 95% 折扣係長任務 agent 成本救星——上下文重嘅產品（分析型、代碼型）成本結構大幅改善。"
+      }
+    ],
+    actions: [
+      "等 API 開放先試長任務場景：用佢跑打字網站 regression（50項）＋計 token 成本，驗證「數日任務」實際慳唔慳人手",
+      "產品留位：新功能加「模型可切換」設定，Carbon 級模型開放時一鍵升級，唔好寫死單一模型依賴",
+      "追蹤 Fairwind Program 開放節奏＋SEC-bench 類安全基準——AI 安全工具市場起動訊號"
+    ]
+  },
+  {
     id: "2026-10-29-simplust-registration-75k",
     board: "social",
     title: "簡樸房登記 7.5 萬伙・覆蓋全港七成：「先登記後執法」走到關鍵位——48 個月過渡期嘅三道執行考題",

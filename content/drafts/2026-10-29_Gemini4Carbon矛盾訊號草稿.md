@@ -1,6 +1,8 @@
 # 草稿：Gemini 4 Carbon「10/28 發布」傳聞（矛盾訊號·唔出版）
 
-> 狀態：草題（真偽把關未過）
+> 狀態：✅ 已轉正（2026-10-30）——blog.google 官方發布帖出現＋The Verge 白名單覆蓋，轉正條件達成
+> 正式稿：content/2026-10-30_Gemini4Carbon官宣.md（id: 2026-10-30-gemini4-carbon-official）
+> 矛盾解釋：官宣屬實（10/28 blog.google）但分階段受控推出——先 cyber defenders，公眾暫用唔到，故「內部 checkpoint」同「官宣」兩說各自成立
 > 記錄日期：2026-10-29（10/28-29 補跑期間核證）
 
 ## 📌 傳聞內容
