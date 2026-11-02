@@ -2,6 +2,37 @@
 // 新增文章：unshift 到陣列最前
 const ARTICLES = [
   {
+    id: "2026-11-02-openai-science-discoveries",
+    board: "ai",
+    title: "【草題轉正】OpenAI 三項科學發現：Kakeya 猜想、ETH 假說被證偽、量子場論——AI 由寫論文變做科學",
+    date: "2026-11-02",
+    tags: ["作品集價值", "商業參考"],
+    sources: [
+      { org: "OpenAI 官方", title: "Working with academic communities to build scientific understanding", date: "2026-10-27", url: "https://openai.com/index/building-scientific-understanding-with-academic-communities" },
+      { org: "The Verge", title: "OpenAI announces three science discoveries（Kakeya conjecture、ETH、quantum field theory）", date: "2026-10-27", url: "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics" },
+      { org: "Al Jazeera（背景補充）", title: "700+ AI生成論文覆蓋370+未解數學題", date: "2026-10", url: "https://www.aljazeera.com" }
+    ],
+    verifiedDate: "2026-11-02",
+    summaryShort: "OpenAI 10/27宣佈三項AI科學發現：Kakeya猜想新結果、指數時間假說（ETH）被證偽、量子場論——AI由輔助工具變科學主力；部分研究者質疑保密性。",
+    summary: "OpenAI 10月27日宣佈三項由AI模型產出嘅科學發現：數學——調和分析嘅Kakeya猜想有新結果（研究波／針狀物點樣集中嘅百年難題）；計算機科學——證明指數時間假說（ETH）係錯嘅，係複雜度理論嘅重大顛覆；物理——量子場論相關新發現。同時公佈同學術界合作嘅新模式，合作夥伴包括ETH Zurich研究者。背景：配合700+篇AI生成論文覆蓋370+個未解數學題嘅早前發佈。The Verge報道：部分研究者對公佈方式嘅保密性提出異議。",
+    coreAnalysis: "「AI做科學」由營銷口號變成可驗證產出——而且揀嘅三樣嘢全部係硬到冇朋友嘅基礎問題。三個睇位：①能力邊界又移咗——之前AI拿手嘅係「有大量範例嘅模式任務」，而家係「人類幾十年未解嘅抽象結構問題」②ETH被證偽嘅連鎖反應——好多密碼學安全性論證建立在ETH之上，理論密碼學要重新審視（「AI結果改寫教科書」第一例）③保密爭議又現——同獨立評估之爭、研究員開除案同一條治理線：透明度係AI公司最難嘅自律位。",
+    dims: [
+      {
+        title: "2️⃣ 作品集價值＋Agent 產品視角",
+        body: "AI for Science係面試／作品集嘅頂級敘事材料：識得講「三項發現＋學術合作模式＋保密爭議」三層，展示你追緊能力曲線本身。\n對自己產品線：香港創科線（北都大學城＋沙嶺算力36倍）嘅國際背景就係呢個——「算力→科學發現」嘅管道而家有咗第一個公開案例，香港發展AI基建嘅「為咗咩」有咗答案範本。"
+      },
+      {
+        title: "5️⃣ 商業參考庫",
+        body: "學術合作即渠道：把研究社群變成分銷＋認證渠道——同獨立基準（Artificial Analysis）、獨立評估（METR）同一信任邏輯。\nAI科學產出嘅定價伏線：基礎發現暫時係品牌資產；可預期下一步係「付費科學Agent」（製藥、材料）——Anthropic已經開咗生物實驗室，賽道對齊。\n驗證經濟：AI生成證明需要人類數學家驗證——「AI產出×人類驗證」會係新職業結構（Lean形式化驗證工具鏈受益）。"
+      }
+    ],
+    actions: [
+      "作品集：將呢篇同Anthropic生物實驗室、沙嶺算力拼成「AI for Science香港機會」一頁紙",
+      "追蹤：ETH證偽嘅學界覆核（數學界驗證需時，半年內有結論）＋保密爭議後續",
+      "本站把關案例收藏：社交媒體線索→吊五日→白名單→轉正——同Gemini Carbon一齊做「草題制度」雙案例"
+    ]
+  },
+  {
     id: "2026-11-01-fintech-summit-super-week",
     board: "policy",
     title: "金融盛事 super week 前瞻：金融科技週 45,000 人×峰會 280 領袖同日開鑼——「金融×AI」雙主場嘅年度驗收位",
