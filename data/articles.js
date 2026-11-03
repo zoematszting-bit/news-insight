@@ -2,6 +2,37 @@
 // 新增文章：unshift 到陣列最前
 const ARTICLES = [
   {
+    id: "2026-11-03-hkma-fintech-week-sage",
+    board: "policy",
+    title: "金管局 Project SAGE：香港正式落場代理式金融——Agent 時代嘅金融監管，香港搶閘",
+    date: "2026-11-03",
+    tags: ["公務員考試", "商業參考"],
+    sources: [
+      { org: "政府新聞公報", title: "香港金融科技週2026（金管局四大範疇新措施）", date: "2026-11-02", url: "https://www.info.gov.hk/gia/general/202611/02/P2026110200254.htm" },
+      { org: "明報", title: "金管局4範疇推動金融科技發展", date: "2026-11-03", url: "https://news.mingpao.com" },
+      { org: "新浪財經", title: "金管局公布四項金融科技措施（余偉文開幕宣佈）", date: "2026-11-02", url: "https://finance.sina.com.cn/stock/hkstock/hkstocknews/2026-11-02/doc-inixipwx0416889.shtml" }
+    ],
+    verifiedDate: "2026-11-03",
+    summaryShort: "金融科技週11/2開幕，金管局宣佈四大範疇措施，頭炮係代理式金融：Project SAGE＋專家小組＋代理式AI討論文件——香港搶閘Agent金融監管。",
+    summary: "香港金融科技週x StartmeupHK 2026（11月2-6日，會展；逾45,000人、120+經濟體、1,000+講者）11月2日開幕，金管局總裁余偉文宣佈四大範疇新措施：①代理式金融——推出Project SAGE（Securing Agentic Finance with Governance and Enablement），賦能業界探索代理式金融應用並建立管治框架；成立跨界別代理式金融專家小組；就銀行應用代理式人工智能發表討論文件，收集業界對監管及管治嘅意見②後量子密碼學——與香港科技大學合作③代幣化④跨境支付等安排。",
+    coreAnalysis: "呢係香港AI治理線嘅金融主場延伸，而且係全球搶閘：國際上「Agent治理」仲停留喺白宮自願協議同公司自建審計，香港金管局直接用「項目＋專家小組＋討論文件」三件套落地行業管治——監管者做埋enabling角色，唔係淨係規管。「先賦能、後立規」節奏係香港版Agent治理路線圖，對金融從業者、AI產品人、RegTech創業者全部係明確訊號：代理式金融係香港下一個政策窗口。",
+    dims: [
+      {
+        title: "5️⃣ 商業參考庫（對我嘅產品線）",
+        body: "Agent×金融＝最靚嘅變現場景：「代理式金融」官方定義登場＝Agent產品喺香港最有監管確定性嘅應用領域。\nRegTech新需求：SAGE治理框架＝合規工具需求：Agent行為審計、權限管理、交易可解釋性——香港本地AI安全公司第二個政策紅利窗口。\n討論文件＝入場券：金管局公開收意見——AI產品人提交意見書係參與標準制定嘅罕有機會。"
+      },
+      {
+        title: "2️⃣ 考試面試：對招聘、面試題、崗位需求嘅變化",
+        body: "面試級論述：香港AI治理「雙軌」成形——打擊犯罪軌（AI專員＋深偽立法，保安主導）＋金融發展軌（SAGE＋代幣化，金管局主導）——識得講「同一個AI，香港用兩個局用兩種方式管」，係政策理解嘅高分展示。"
+      }
+    ],
+    actions: [
+      "面試素材：「雙軌治理」框架＋SAGE三件套（項目/小組/文件）＋四範疇清單",
+      "產品行動：讀金管局代理式AI討論文件，諗一個「合規Agent金融應用」概念——Agent課程作業＋SAGE意見書一魚兩食",
+      "相關閱讀：本站10/15（施政AI治理·打擊軌）＋9/11（OpenAI金融版ChatGPT·對照）——「Agent×金融」完整圖景"
+    ]
+  },
+  {
     id: "2026-11-02-openai-science-discoveries",
     board: "ai",
     title: "【草題轉正】OpenAI 三項科學發現：Kakeya 猜想、ETH 假說被證偽、量子場論——AI 由寫論文變做科學",
