@@ -2,6 +2,37 @@
 // 新增文章：unshift 到陣列最前
 const ARTICLES = [
   {
+    id: "2026-11-04-ai-crawl-optout-standard",
+    board: "ai",
+    title: "四巨頭共用一個 opt-out：robots.txt 統一 AI 爬取封鎖——內容權利時代嘅第一塊基石",
+    date: "2026-11-04",
+    tags: ["商業參考", "產品靈感"],
+    sources: [
+      { org: "The Verge", title: "OpenAI, Google, Microsoft back shared AI scraping opt-out standard", date: "2026-10-30", url: "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out" },
+      { org: "Nieman Lab（新聞業界刊）", title: "Anthropic, OpenAI, Google and Microsoft will make it easier for publishers to opt out", date: "2026-11", url: "https://www.niemanlab.org/2026/11/anthropic-openai-google-and-microsoft-will-make-it-easier-for-publishers-to-opt-out-of-being-scraped" },
+      { org: "The Next Web", title: "AI training opt-out robots.txt standard（Google/Microsoft 2027年實施時間表）", date: "2026-10-30", url: "https://thenextweb.com/news/ai-training-opt-out-robots-txt-google-openai-microsoft-anthropic" }
+    ],
+    verifiedDate: "2026-11-04",
+    summaryShort: "四巨頭10/30聯合支援共用robots.txt AI爬取opt-out：一行token封鎖四家；Google/Microsoft 2027年先實施；robots.txt係牌唔係鎖。",
+    summary: "10月30日，Google、OpenAI、Microsoft、Anthropic罕有聯合宣佈：支援一個共用嘅robots.txt AI訓練opt-out訊號——出版商只要加一行統一token，就可以一次過向四巨頭表明拒絕AI爬取／訓練，唔使再逐家逐戶追蹤唔同嘅爬蟲user-agent。時間表有落差：Google同Microsoft要到2027年先開始遵守，其他廠較早。技術限制（Google Gary Illyes明言）：robots.txt擋唔到未經授權存取——佢係「請勿內進」嘅牌，唔係鎖，靠嘅係自願遵守。呢個標準嘅主要受益者係新聞出版商同內容創作者。",
+    coreAnalysis: "我本身係內容出版者（呢個分析庫＋將來嘅產品內容）——呢個標準直接適用於我。三層意義：①內容權利基建開工——同textGrain水印、深偽立法拼埋，係「內容權利三件套」：你嘅內容點被爬（opt-out）、點被驗（水印）、點被濫用（深偽法）②coopetition再現——四巨頭打到你死我活，但內容生態係共同依賴：內容商罷工佢哋一齊死，所以一齊讓步③「自願遵守」嘅軟肋——同白宮協議同一結構問題：牌唔係鎖，第三方爬蟲完全唔受約束。",
+    dims: [
+      {
+        title: "5️⃣ 商業參考庫",
+        body: "內容議價時代：opt-out統一＝內容授權市場前置基建——「唔畀免費爬」先行，「畀錢授權」跟尾，內容授權交易會係2027年新市場。\n標準即權力：四巨頭自訂標準（唔係W3C）——平台自訂規則又一例。\n對我嘅站：分析庫內容全部自創＋官方來源引用——「授權乾淨」內容，將來變現時係資產質素嘅一部分。"
+      },
+      {
+        title: "1️⃣ 產品功能升級靈感",
+        body: "即做：幫自己個站加robots.txt統一opt-out token（一行嘢）——親身體驗呢個標準，係最實在嘅「產品人跟標準」動作；記錄加咗之後AI爬蟲流量變化——微實驗本身係內容線第一手數據。"
+      }
+    ],
+    actions: [
+      "今日做：自己個站加統一opt-out token（一行）——體驗標準＋宣告內容權利立場",
+      "商業庫更新：內容權利三件套（opt-out＋水印＋深偽法）＋coopetition四案例",
+      "追蹤：2027年Google/Microsoft實施情況；內容授權交易市場第一單大deal"
+    ]
+  },
+  {
     id: "2026-11-03-hkma-fintech-week-sage",
     board: "policy",
     title: "金管局 Project SAGE：香港正式落場代理式金融——Agent 時代嘅金融監管，香港搶閘",
