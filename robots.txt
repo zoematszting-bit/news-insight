@@ -1,0 +1,20 @@
+# 視野 · 分析庫 robots.txt
+# 內容權利立場（2026-11-05）：本站內容拒絕未經授權嘅 AI 訓練用途
+# 方法：meta noai/noimageai（拒訓練不拒索引，保留搜尋可見度）
+# 註：四巨頭共用 opt-out 標準（2026-10-30 宣佈）Google/Microsoft 2027 年先實施，
+#     屆時可加統一 token；GitHub Pages 靜態託管無法設置 X-Robots-Tag HTTP header
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: *
+Allow: /
