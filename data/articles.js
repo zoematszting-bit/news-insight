@@ -2,6 +2,37 @@
 // 新增文章：unshift 到陣列最前
 const ARTICLES = [
   {
+    id: "2026-11-10-dollar-government-deals",
+    board: "ai",
+    title: "1 美元嘅政府生意：OpenAI 退場、Anthropic 全押三權——AI 公司搶政府市場嘅兩種打法",
+    date: "2026-11-10",
+    tags: ["商業參考"],
+    sources: [
+      { org: "Anthropic 官方", title: "Expanded GSA partnership：Claude 進入政府三大分支（估計慳10億美元、無最低消費）", date: "2026-10-27", url: "https://www.anthropic.com" },
+      { org: "Quartz", title: "OpenAI scraps symbolic $1-per-year government deal, replaces with 27-month agreement at 50% cost cut", date: "2026-11", url: "https://qz.com" },
+      { org: "Congressional Research Service（背景）", title: "CRS 報告：Claude 喺國防部合約談判中嘅使用例外請求（10月14日）", date: "2026-10-14", url: "https://www.congress.gov" }
+    ],
+    verifiedDate: "2026-11-10",
+    summaryShort: "GSA OneGov計劃下OpenAI同Anthropic曾以$1象徵價賣企業級產品俾聯邦政府；OpenAI已退出改27個月半價約，Anthropic反而全押三大分支（宣稱慳$10億）。",
+    summary: "美國政府AI採購出現象徵式定價大戰：透過總務署（GSA）OneGov計劃，OpenAI同Anthropic都曾以1美元象徵式價格向聯邦機構提供企業級產品（ChatGPT Enterprise／Claude for Government）。最新發展分化：OpenAI已終止1美元安排，改為27個月新協議、使用成本減半；Anthropic 10月27日反而擴大GSA合作——Claude進入行政、立法、司法三大分支，官方估計為政府慳10億美元，而且無最低消費綁定。背景：國會研究服務處（CRS）10月報告披露Claude喺國防部合約談判中有使用例外請求——AI公司同政府嘅關係由採購延伸到國防爭議。",
+    coreAnalysis: "「1美元定價」係平台經典打法嘅政府版：免費層換鎖定效應——政府採購係最鑽石級嘅客戶（預算穩、續約長、背書效應強），1美元入場嘅真實代價係「成為政府基礎設施」。兩種打法對照係本篇精華：OpenAI打完就收（象徵式定價→可持續合約，要收入曲線支持IPO敘事）vs Anthropic繼續送（無最低消費＋三大分支，要嘅係滲透率同「政府信任」品牌——同佢安全敘事同IPO前定位一致）。對做產品嘅人：象徵式定價唔係做善事，係揀「要現金流」定「要位」嘅戰略分岔——揀之前諗清楚自己要邊樣。",
+    dims: [
+      {
+        title: "5️⃣ 商業參考庫",
+        body: "象徵式定價三用途：教育市場（政府用戶養成習慣）／鎖定效應（數據＋流程遷移成本）／政治資本（「幫政府慳10億」係公關資產）。\n退出都係策略：OpenAI唔係失敗退場——1美元完成歷史任務（入場）之後轉正式合約（收成）——「免費→半價→全價」階梯係標準SaaS政府銷售週期。\n對我：學費追蹤網站將來如果接學校／機構客：象徵式首年定價換試點案例，係低成本入市樣本。"
+      },
+      {
+        title: "2️⃣ 市場格局（Agent 產品視角）",
+        body: "政府市場係Agent產品嘅終極驗證場：政府工作流程（文件、審批、合規）正正係Agent最擅長嘅結構化任務——邊家AI公司霸到政府工作台，等於霸咗Agent時代嘅「企業Windows」。\nCRS披露嘅國防例外請求提醒：政府生意嘅深水區係用途邊界（軍事用途）——贏咗合約都要守住用法爭議。"
+      }
+    ],
+    actions: [
+      "商業庫更新：象徵式定價三用途＋「免費→半價→全價」政府銷售階梯",
+      "面試素材：OpenAI vs Anthropic政府市場兩種打法——「要現金流定要位」嘅戰略分析樣本",
+      "追蹤：Anthropic「慳10億」宣稱嘅實際使用數據；OpenAI 27個月協議到期續約戰"
+    ]
+  },
+  {
     id: "2026-11-06-fintech-week-wrapup",
     board: "policy",
     title: "【收線】金融科技週閉幕：4.8 萬人、十一屆之最——「金融盛事 super week」兩大支柱齊齊落地",
