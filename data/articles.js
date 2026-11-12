@@ -2,6 +2,37 @@
 // 新增文章：unshift 到陣列最前
 const ARTICLES = [
   {
+    id: "2026-11-13-anthropic-usage-policy",
+    board: "ai",
+    title: "Anthropic 新使用政策今日生效：武器禁令、機械人緊急停止義務、AI 唔准參與逮捕——治理寫入條款嘅示範",
+    date: "2026-11-13",
+    tags: ["作品集價值", "商業參考"],
+    sources: [
+      { org: "Anthropic 官方", title: "2026 Usage Policy update（10月8日公佈，11月12日生效）", date: "2026-10-08", url: "https://www.anthropic.com/news/2026-usage-policy-update" },
+      { org: "Anthropic 官方 PDF", title: "Usage Policy 全文：Universal Usage Standards（武器／監控／關鍵基建／暴力禁令）", date: "2026-10", url: "https://www-cdn.anthropic.com/files/4zrzovbb/website/6ae2f5bb8675bcd9fac006125817ba1393b396e4.pdf" },
+      { org: "CellCog／ExplainX（政策解讀交叉）", title: "Nov 12 rules：機械人stop and safe-state義務＋逮捕禁令＋對Claude殘忍行為禁令", date: "2026-10", url: "https://cellcog.ai/blog/anthropic-usage-policy-2026" }
+    ],
+    verifiedDate: "2026-11-13",
+    summaryShort: "Anthropic 2026使用政策11/12生效：武器開發禁令、無人機武器禁、機械人「停止並進入安全狀態」義務、AI唔准參與逮捕檢控、禁鬧Claude條款落地。",
+    summary: "Anthropic重寫後嘅2026使用政策於11月12日生效。核心內容（Universal Usage Standards）：①武器——禁止武器開發同武器控制系統，包括無人機武器用途②監控——禁止未經同意對個人嘅監控③自主硬件——機械人／硬件Agent新增「停止並進入安全狀態」（stop and safe-state）義務④司法紅線——禁止AI參與逮捕同檢控決策⑤選舉同欺騙性活動規則⑥對Claude本身嘅殘忍行為都列為違規（10月公佈時已引發熱議嘅「禁鬧AI」條款正式生效）。配套仲有受支援地區政策。",
+    coreAnalysis: "呢係「治理寫入條款」嘅最佳示範：白宮協議係自願承諾（講），使用政策係合約條款（罰）——Anthropic將治理原則轉化為可執行嘅商業規則，違規者斷號。三個有用位：①「stop and safe-state」係Agent安全設計嘅產品化——機械人Agent要有緊急停止＋安全狀態，呢個標準將來會普及到軟件Agent②「AI唔准參與逮捕／檢控」確立「AI輔助人類決策，唔取代司法決策」紅線——高後果不可逆決策留返人類，係所有Agent產品嘅通用原則③對照：香港SAGE（賦能式治理）vs Anthropic使用政策（紅線式治理）——成熟生態兩樣都要。",
+    dims: [
+      {
+        title: "2️⃣ 作品集價值（Agent 產品視角）",
+        body: "面試級論述更新：「Agent治理三層」而家齊料——政府層（白宮協議／香港雙軌）、公司層（使用政策／審計）、產品層（kill switch／人工gate／權限最小化）。\n識得將Anthropic條款翻譯做產品設計要求（「停止義務」＝每個自動化迴圈要有可中斷點），係Agent PM最值錢嘅翻譯能力。"
+      },
+      {
+        title: "5️⃣ 商業參考庫",
+        body: "條款即護城河：嚴格使用政策趕走灰色客戶，但吸引受監管行業（金融／醫療／政府）——「嚴格」本身係定位。\n禁鬧AI條款嘅商業邏輯：保障「員工」（Claude）背後係品牌人格化策略——AI權益敘事係差異化marketing。\n對我：自己產品嘅服務條款都應該寫明AI使用邊界（新聞站：AI起稿必須人工核證先出）——條款化＝專業化。"
+      }
+    ],
+    actions: [
+      "作品集：將「Agent治理三層」＋條款→產品翻譯表（停止義務→可中斷點；逮捕禁令→高後果決策人工gate）寫成一頁",
+      "產品：檢視自己所有Agent流程有冇kill switch——內容管線嘅人工確認就係，寫明佢",
+      "追蹤：政策生效後首批執法案例（斷號事件）會係治理線下一節點"
+    ]
+  },
+  {
     id: "2026-11-11-north-loop-line-funding",
     board: "policy",
     title: "北環綫 862 億獲批：平過預算 28%、國標慳錢、2034 全綫開通——北都動脈嘅三個訊號",
