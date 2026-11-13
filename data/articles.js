@@ -2,6 +2,37 @@
 // 新增文章：unshift 到陣列最前
 const ARTICLES = [
   {
+    id: "2026-11-14-freeze-ai-lawsuit",
+    board: "ai",
+    title: "法庭路線開打：四個非牟利組織入稟要求凍結前沿 AI——治理戰場由自願協議轉入司法",
+    date: "2026-11-14",
+    tags: ["作品集價值"],
+    sources: [
+      { org: "Public Citizen（原告官方聲明）", title: "Coalition of Nonprofits Files Landmark Lawsuit to Stop Development of Advanced AI Systems", date: "2026-11-12", url: "https://www.citizen.org/news/coalition-of-nonprofits-files-landmark-lawsuit-to-stop-development-of-advanced-ai-systems-at-anthropic-google-meta-openai-and-spacexsi-that-proliferate-bioweapons-and-cyberattacks" },
+      { org: "AP News", title: "Advocacy groups sue AI giants to freeze new models, warning of 'catastrophic' risks", date: "2026-11-12", url: "https://apnews.com" },
+      { org: "Common Dreams／Unite.AI（交叉報道）", title: "Landmark Lawsuit Aims to Stop Big Tech's Advanced AI Development", date: "2026-11-12", url: "https://www.commondreams.org/news/freeze-ai-development-lawsuit" }
+    ],
+    verifiedDate: "2026-11-14",
+    summaryShort: "11/12四個NGO（Public Citizen等）三藩市入稟控OpenAI/Google/Anthropic/Meta/SpaceXSI，要求凍結前沿AI喺現有水平——加州不公平競爭法做訴因，治理戰場轉入司法。",
+    summary: "11月12日，四個非牟利組織（Public Citizen、Heat Initiative等組成嘅聯盟）喺三藩市入稟法院，控告OpenAI、Google、Anthropic、Meta同SpaceXSI（SpaceX AI部門），要求法院頒令凍結前沿AI開發喺現有水平——禁止訓練比目前更先進嘅模型。訴訟理據：呢啲公司「無力防止」其AI系統造成災難性傷害（生物武器擴散、網絡攻擊），違反加州不公平競爭法。原告強調唔係要求禁售現有產品（ChatGPT等照用），而係喺「災難發生前」凍結升級。案件被稱為「里程碑」訴訟——法院首次被要求裁定「AI發展可否被法律叫停」。",
+    coreAnalysis: "治理線年度大戲嘅第四幕：減速公開信（9/13·講）→白宮協議（9/20·自願承諾）→使用政策（11/13·合約條款）→法庭（本篇·強制）——治理工具一路升級，由勸到約到罰到告。兩個分析位：①法律策略聰明：用「不公平競爭法」而唔係索償侵權——唔使等實際災難發生，只需論證「無力防止＋誤導公眾」，門檻低好多②勝訴機會存疑但影響真實：法院好可能以管轄權或「政治問題」拒絕頒凍結令，但只要案件進入程序（discovery階段），原告可以強制披露內部安全測試文件——法庭係透明度嘅後門。",
+    dims: [
+      {
+        title: "2️⃣ 作品集價值（Agent 產品視角）",
+        body: "「AI治理四幕劇」而家係面試最強敘事線：每幕有主角（Amodei／白宮／Anthropic條款／Public Citizen）、有工具（公開信／協議／條款／訴訟）、有張力（自願vs強制）。\n識得講「治理工具升級鏈」＋「訴訟嘅真實作用係discovery披露」，係治理題嘅頂級答案。另注：SpaceXSI首次同四大並列做被告——前沿玩家名單正式加到第五個。"
+      },
+      {
+        title: "5️⃣ 商業參考庫",
+        body: "訴訟即監管：美國式路徑——立法慢→監管缺→NGO用法庭補位，AI公司法律風險預算持續上升。\n不公平競爭法嘅啟示：「無力防止傷害」做訴因——「安全能力聲稱」同「實際防護」嘅落差會成為法律把柄。\n對我：自己產品嘅「安全聲稱」（人工把關、來源核證）要寫得準確——聲稱超過實做就係把柄。"
+      }
+    ],
+    actions: [
+      "作品集：治理四幕劇（公開信→協議→條款→訴訟）寫成一頁時間線——面試治理題萬能框架",
+      "追蹤：法院是否受理＋臨時禁令申請結果——任何一個節點都係大新聞",
+      "相關閱讀：本站9/13→9/20→10/14→11/13→本篇——治理線五篇完整成鏈"
+    ]
+  },
+  {
     id: "2026-11-13-anthropic-usage-policy",
     board: "ai",
     title: "Anthropic 新使用政策今日生效：武器禁令、機械人緊急停止義務、AI 唔准參與逮捕——治理寫入條款嘅示範",
