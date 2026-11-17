@@ -2,6 +2,36 @@
 // 新增文章：unshift 到陣列最前
 const ARTICLES = [
   {
+    id: "2026-11-18-paris-call-ai",
+    board: "ai",
+    title: "巴黎呼籲（Paris Call）：OpenAI、Anthropic 承諾前沿模型「熄機掣」——Google、Meta、美國走甩，治理碎片化開始",
+    date: "2026-11-18",
+    tags: ["作品集價值"],
+    sources: [
+      { org: "法國政府官方宣言（diplomatie.gouv.fr）", title: "Paris Call for AI Safety and Security：聯合宣言全文（簽署名單＋承諾條文）", date: "2026-11-09", url: "https://www.diplomatie.gouv.fr" },
+      { org: "Dealroom／Ground News（多媒體交叉）", title: "OpenAI、Anthropic sign Macron's Paris Call；US、Google、Meta stay away", date: "2026-11-09", url: "https://dealroom.co/news/172067-openai-anthropic-sign-macron-s-paris-call-but-us-and-google-stay-away" }
+    ],
+    verifiedDate: "2026-11-18",
+    summaryShort: "巴黎呼籲11/9由馬克龍主持launch：OpenAI/Anthropic/Microsoft/Mistral等約10實驗室＋8-16國簽自願承諾（off-switch熄機掣+獨立評估）；Google、Meta、美國冇簽——治理碎片化。",
+    summary: "法國總統馬克龍11月9日主持launch「巴黎呼籲（Paris Call for AI Safety and Security）」——自願性前沿AI安全承諾：約10家主要AI開發商（OpenAI、Anthropic、Microsoft、Mistral等）同約8-16國政府簽署。核心承諾：①前沿模型配備失效安全熄機機制（off-switch／fail-safe shutdown）②危險濫用（網攻、生物威脅）加速事故通報③獨立模型評估＋外部審計④評估合作嘅國際協作。矚目缺席者：Google、Meta同美國政府都冇簽。安全組織批評承諾「冇牙」——自願性質、無執行機制。",
+    coreAnalysis: "治理線第六章，兩個關鍵轉變：①治理碎片化開始——對比白宮協議（9/20·308字·六大巨頭齊簽），巴黎呼籲係「法國版」自願協議，但Google同Meta走甩：五個月前仲全員企齊嘅美國陣營而家分裂——自願協議冇約束力嘅後遺症顯現②「熄機掣」寫入國際承諾——同Anthropic使用政策（11/13生效）嘅「stop and safe-state」條款完全同一概念、同一週：由公司條款到國際承諾，「Agent必須可以安全停止」快速成為全球共識標準。對我做Agent產品：kill switch唔再係可選設計，係國際標準嘅預期配置。",
+    dims: [
+      {
+        title: "2️⃣ 作品集價值（Agent 產品視角）",
+        body: "治理線六章圖譜而家完整：減速信（倡議）→白宮協議（自願·全簽）→使用政策（條款）→獨立評估之爭（角力）→凍結訴訟（司法）→巴黎呼籲（國際·分裂）——「同一個議題喺六個層面同時演進」。\n面試升級論點：識得指出碎片化先係故事主軸——白宮協議vs巴黎呼籲vs歐盟AI Act三套並行，跨國Agent產品要做「合規組合管理」。"
+      },
+      {
+        title: "5️⃣ 商業參考庫",
+        body: "簽與不簽嘅商業邏輯：OpenAI／Anthropic簽（安全敘事係IPO前定位）；Google／Meta唔簽（自有生態＋法律風險）——簽協議都係positioning。\n評估即服務：承諾「獨立評估＋外部審計」＝METR類機構嘅國際市場正式開波。\n對我：內容管線kill switch（人工確認gate）有國際標準背書——寫入產品文檔可引Paris Call。"
+      }
+    ],
+    actions: [
+      "作品集：治理六章圖譜一頁紙（倡議→自願→條款→角力→司法→國際分裂）＋「碎片化主軸」論點",
+      "產品：Agent產品文檔加kill switch章節（引Paris Call＋Anthropic條款做標準依據）",
+      "追蹤：Google／Meta會否後補簽；香港會唔會簽（簽署名單開放中）"
+    ]
+  },
+  {
     id: "2026-11-17-building-maintenance-reform-council",
     board: "policy",
     title: "樓宇維修改革督導委員會開波：報告 16 日、陳國基下令「切斷利益鏈」——宏福苑線第二篇",
