@@ -2,6 +2,36 @@
 // 新增文章：unshift 到陣列最前
 const ARTICLES = [
   {
+    id: "2026-11-19-anthropic-ipo-pricing",
+    board: "ai",
+    title: "Anthropic IPO 定價時刻：1.4 萬億估值、825M 股、路演開跑——AI 資本市場元年嘅估值錨釘落邊度？",
+    date: "2026-11-19",
+    tags: ["商業參考"],
+    sources: [
+      { org: "Reuters", title: "Anthropic IPO to raise as much as $64.4 billion in public offering + $26B private placement—target $1.4T valuation", date: "2026-11-10", url: "https://www.reuters.com/business/anthropic-ipo-raise-much-644-billion-latest-draft-prospectus-shows-2026-11-10" },
+      { org: "CNBC（IPO 指南）", title: "Anthropic IPO: 825 million Class A shares at $70–78；David Faber料超上限定價；roadshow已啟動", date: "2026-11-16", url: "https://www.cnbc.com/2026/11/16/anthropic-ipo-date-price-range.html" }
+    ],
+    verifiedDate: "2026-11-19",
+    summaryShort: "Anthropic IPO定價階段：目標$1.4T完全攤薄估值、公開發售最多$64.4B＋私人配售$26B、825M股@$70-78、Faber料超上限——AI資本市場元年估值錨。",
+    summary: "Anthropic IPO進入定價階段：最新招股文件（Reuters 11月10日）目標完全攤薄估值1.4萬億美元，有望成為史上最大IPO之一。集資結構雙軌：公開發售最多644億美元＋260億美元私人配售（Google、Nvidia、Microsoft等舊股東再注資）——合計最多約900億。CNBC（11月16日）公佈細節：8.25億股A類股，定價區間70-78美元；CNBC嘅David Faber預期會超上限定價。路演已啟動，Reuters形容係「AI市場嘅關鍵測試」。背景：Nvidia持股約50億美元（6月估值）——同期Nvidia股價因間諜指控跌約10%，AI供應鏈股價相互纏繞。",
+    coreAnalysis: "本站10/27 S-1拆解預測「11月中定價」——兌現（追蹤第3次應驗）。三個睇位：①估值錨效應——1.4萬億一旦站穩，成個AI板塊嘅估值參照即刻重寫：應用層公司嘅融資談判全部要對照呢個錨②雙軌集資嘅訊號——260億私人配售畀舊股東：上市前鎖定大戶＋舊股東加註＝信心票，呢個結構會被之後嘅AI IPO複製③Nvidia悖論——Nvidia同時係Anthropic股東、算力供應商、又被間諜指控纏身跌10%：AI供應鏈已經係一榮俱榮一損俱損嘅纏繞結構，單一公司風險分析失效。",
+    dims: [
+      {
+        title: "5️⃣ 商業參考庫",
+        body: "史上最大IPO嘅設計：雙軌集資（公開＋私人配售）＋超大定價區間——巨型IPO點樣管理需求：私人配售鎖定基本盤，公開部分讓市場競價。\n超上限定價嘅訊息：Faber「料超上限」＝需求過剩——AI資產饑渴仍然真實（對比「AI泡沫」論）。\n對我：底層估值錨定後，應用層公司嘅「相對便宜」敘事出現——Agent產品融資窗口理論上會跟住開。"
+      },
+      {
+        title: "2️⃣ 市場格局（Agent 產品視角）",
+        body: "IPO線全圖譜（本站追蹤）：10/8 Haiku 5.5（IPO前產品敘事）→10/27 S-1（12倍增長／420億虧損／兩客戶25%）→10/24 Google Cloud互售（渠道結構）→本篇（定價）。\n上市後Anthropic每季交數——Agent市場多咗一個「公開數據燈塔」：佢公佈嘅企業Agent收入結構，係整個行業最好嘅免費市場調研。"
+      }
+    ],
+    actions: [
+      "追蹤（一週內）：最終定價＋首日表現——低於78定價＝需求訊號逆轉，高於＝AI饑渴確認",
+      "商業庫：巨型IPO雙軌結構＋「應用層相對便宜」敘事筆記",
+      "相關閱讀：本站IPO線四篇（10/8→10/24→10/27→本篇）——AI資本市場元年完整圖"
+    ]
+  },
+  {
     id: "2026-11-18-paris-call-ai",
     board: "ai",
     title: "巴黎呼籲（Paris Call）：OpenAI、Anthropic 承諾前沿模型「熄機掣」——Google、Meta、美國走甩，治理碎片化開始",
