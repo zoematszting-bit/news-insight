@@ -2,6 +2,37 @@
 // 新增文章：unshift 到陣列最前
 const ARTICLES = [
   {
+    id: "2026-11-25-openai-1-25t-raise",
+    board: "ai",
+    title: "【補更】OpenAI 私募 1.25 萬億低於要價 vs ANT 公開 2 萬億超上限——雙雄估值戰嘅兩條路",
+    date: "2026-11-25",
+    tags: ["商業參考"],
+    sources: [
+      { org: "Reuters", title: "OpenAI secures $11 billion funding at $1.25 trillion valuation（11月6日首關）", date: "2026-11-06", url: "https://www.reuters.com/business/openai-secures-11-billion-funding-125-trillion-valuation-bloomberg-news-reports-2026-11-06" },
+      { org: "Bloomberg", title: "OpenAI Completes $11 Billion Portion of Funding at $1.25 Trillion Value", date: "2026-11-06", url: "https://www.bloomberg.com/news/articles/2026-11-06/openai-completes-11-billion-portion-of-funding-at-1-25-trillion-value" },
+      { org: "Yahoo Finance", title: "估值低於1.4萬億要價；集資由300億目標縮水", date: "2026-11", url: "https://finance.yahoo.com/technology/ai/articles/openai-just-raised-11-billion-133842228.html" }
+    ],
+    verifiedDate: "2026-11-25",
+    summaryShort: "OpenAI 11/6私募首關\$110億、估值\$1.25萬億——低於\$1.4T要價、集資縮水；同年Anthropic公開上市\$2T超上限——公私雙軌估值戰：公開熱、私人凍。",
+    summary: "OpenAI 11月6日完成新一輪集資首關：約110億美元，估值1.25萬億美元（Reuters／Bloomberg）。兩個關鍵細節：①低於要價——估值唔及據報嘅1.4萬億目標，集資額亦由據報300億目標縮到110億（Yahoo Finance指差距對Microsoft／NVIDIA呢啲深度綁定投資者有影響）②年內二連跳——3月嗰輪1,220億集資估值8,520億，11月已升至1.25萬億（+47%）。同一個月，對手Anthropic行公開市場：ANT上市超上限定價、市值2萬億——AI雙雄用兩條唔同嘅路完成估值競賽。",
+    coreAnalysis: "對照表先係精華——同一個11月，兩種資本市場反應：ANT公開上市（超上限+17%、2萬億）vs OpenAI私募（低於要價+縮水、1.25萬億）。三個解讀：①公開市場熱、私人市場凍——投資者對公開挂牌（流動性＋定價機制＋季報透明）嘅AI資產更進取；私人巨型輪議價能力下降——資金用腳投票話想要「可退出」②估值差嘅訊號——2T vs 1.25T：公開市場願意畀溢價，同一級數公司相差60%——所有AI公司嘅CFO而家都要重新計算上市時間表③OpenAI嘅後着——據報已表明有公開市場計劃：低於要價嘅私募結果其實係加速佢上市嘅壓力。",
+    dims: [
+      {
+        title: "5️⃣ 商業參考庫",
+        body: "公私估值剪刀差：同級公司公開溢價vs私募折讓——2027年AI公司上市潮嘅結構性動力。\n首關（first close）機制：巨型輪分批關帳——縮水集資+低於要價=「市場唔夠熱但唔想流產」嘅中間落墨。\n對我：「應用層落差」敘事再加碼：兩個底層巨獸合計逾3萬億美元，應用層仲未有100億級Agent產品——落差繼續擴大＝機會繼續擴大。"
+      },
+      {
+        title: "2️⃣ 市場格局（Agent 產品視角）",
+        body: "IPO線圖譜補完：ANT五篇＋本篇＝雙雄完整對照（Anthropic公開2T／OpenAI私募1.25T／年內雙雙跳升）。\n今後兩個燈塔：ANT季報（公開數據）＋OpenAI上市進程（據報2027）——Agent市場嘅免費情報源由一個變兩個。"
+      }
+    ],
+    actions: [
+      "商業庫：公私估值剪刀差＋first close機制＋雙雄對照表三件入庫",
+      "追蹤：OpenAI上市時間表（低於要價會加速佢）＋ANT首份季報對比",
+      "相關閱讀：本站IPO線五篇（ANT）→本篇（OpenAI對照）——資本市場元年雙雄圖"
+    ]
+  },
+  {
     id: "2026-11-23-ecc-election-result",
     board: "policy",
     title: "選委會選舉收線：投票率 98.79%、結果出爐——2027 特首選舉機器正式上鏈",
